@@ -11,7 +11,7 @@
 header {
     height: 83px;
     background: #131313;
-    border: 1px solid grey;
+
 
     & .name {
         color: yellow;
@@ -20,14 +20,11 @@ header {
         right: 81.8%;
         top: 0.36%;
         bottom: 99.54%;
-        //width: 179.74px;
-        //height: 10px;
-        //margin-left:82px;
         font-family: FuturaDemiC;
         font-size: 14px;
         line-height: 16px;
         text-transform: uppercase;
-                color: #E3B873;
+        color: #E3B873;
     }
 
     & .header-nav {
@@ -49,18 +46,20 @@ header {
             height: 10px;
             display: flex;
             font-family: FuturaBookC;
-font-size: 14px;
-line-height: 16px;
-text-transform: uppercase;
-color: #FFFFFF;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
             //justify-content: space-between;
             & li:not(:first-child) {
                 margin-left: 47px;
             }
-& a{
-    text-decoration: none;
-    color: #FFFFFF;
-}
+
+            & a {
+                text-decoration: none;
+                color: #FFFFFF;
+            }
         }
     }
 
@@ -78,72 +77,117 @@ color: #FFFFFF;
         line-height: 16px;
         text-align: right;
         text-decoration-line: underline;
-        
+
         color: #E3B873;
-        
+
     }
 
     & .header-RequestCall {
         position: absolute;
-              right: 6.95%;
+        right: 6.95%;
         top: 0.24%;
         bottom: 99.4%;
-width: 161px;
-height: 37px;
-background: #E3B873;
-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-border-radius: 2px;
+        width: 161px;
+        height: 37px;
+        background: #E3B873;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 2px;
 
         & span {
-
             position: absolute;
             left: 24.14%;
-            
             top: 28.36%;
             bottom: 99.53%;
             width: fit-content;
-
             font-family: FuturaDemiC;
             font-family: FuturaDemiC;
             font-size: 13px;
             line-height: 15px;
             text-align: center;
             text-transform: uppercase;
-            
             color: #FFFFFF;
-            
         }
     }
 }
 
-.top-frame {
+.intro {
     position: relative;
     height: 838px;
-    background-color: beige;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
 
     &--content {
-        width: 1356px;
+        width: 1358px;
         height: 707px;
         position: absolute;
-        left: 5.7%;
         right: 0%;
-        top: 0.82%;
-        bottom: 92.22%;
+        top: 0px;
+        background-image: url(/assets/images/intro-backgound.png);
 
-        background: rgba(0, 0, 0, 0.7);
+        & h2 {
+            position: absolute;
+            left: 3.87%;
+            top: 25.73%;
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 53px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            z-index: 2;
 
+            & span {
+                color: #E3B873;
+
+            }
+        }
+
+        & p {
+            position: absolute;
+            left: 3.87%;
+            top: 40%;
+            font-family: FuturaBookC;
+            font-size: 22px;
+            line-height: 30px;
+            color: #FFFFFF;
+            z-index: 2;
+        }
     }
 
     & aside {
         position: absolute;
-        width: 707px;
-        height: 82px;
+        width: 82px;
+        height: 707px;
         background: #131313;
-        left: -22%;
-        right: 50.83%;
-        top: 39.78%;
-        bottom: 91.41%;
-        transform: rotate(-90deg)
+        z-index: 2;
+
+        & .intro--instagram {
+            position: absolute;
+            left: 9.27%;
+
+            top: 50.05%;
+
+
+            font-family: FuturaDemiC;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            transform: rotate(90deg);
+            color: #E3B873;
+            z-index: 2;
+        }
+
     }
 
     &--scroll-down {
@@ -156,6 +200,80 @@ border-radius: 2px;
 
         background: #131313;
     }
+
+    & button span {
+        font-family: FuturaDemiC;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &--button {
+
+
+        &-painted_over {
+            position: absolute;
+            left: 4.3%;
+            top: 57%;
+            width: 207px;
+            height: 51px;
+            background: #E3B873;
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+            border-radius: 2px;
+
+            z-index: 2;
+        }
+
+        &-unpainted {
+            position: absolute;
+            left: 21%;
+            top: 57%;
+            width: 207px;
+            height: 51px;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 2px;
+            background: none;
+            z-index: 2;
+        }
+    }
+&--scroll-down{
+    position: absolute;
+left: 0%;
+bottom: 9.74%;
+width: 247px;
+height: 97px;
+background: #131313;
+color:white;
+z-index: 2;
+
+
+& span{
+    position: absolute;
+    left: 20%;
+        top: 42%;
+    bottom: 92.13%;
+    
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+        color: #FFFFFF;
+       
+}
+& img{
+    position: absolute;
+
+right: 22.23%;
+top: 34.64%;
+
+
+}
+}
 }
 
 .completed-projects {

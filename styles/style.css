@@ -29,7 +29,6 @@
 header {
   height: 83px;
   background: #131313;
-  border: 1px solid grey;
 }
 
 header .name {
@@ -132,43 +131,157 @@ header .header-RequestCall span {
   color: #FFFFFF;
 }
 
-.top-frame {
+.intro {
   position: relative;
   height: 838px;
-  background-color: beige;
 }
 
-.top-frame--content {
-  width: 1356px;
+.intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.intro--content {
+  width: 1358px;
   height: 707px;
   position: absolute;
-  left: 5.7%;
   right: 0%;
-  top: 0.82%;
-  bottom: 92.22%;
-  background: rgba(0, 0, 0, 0.7);
+  top: 0px;
+  background-image: url(/assets/images/intro-backgound.png);
 }
 
-.top-frame aside {
+.intro--content h2 {
   position: absolute;
-  width: 707px;
-  height: 82px;
-  background: #131313;
-  left: -22%;
-  right: 50.83%;
-  top: 39.78%;
-  bottom: 91.41%;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  left: 3.87%;
+  top: 25.73%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  z-index: 2;
 }
 
-.top-frame--scroll-down {
+.intro--content h2 span {
+  color: #E3B873;
+}
+
+.intro--content p {
+  position: absolute;
+  left: 3.87%;
+  top: 40%;
+  font-family: FuturaBookC;
+  font-size: 22px;
+  line-height: 30px;
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+.intro aside {
+  position: absolute;
+  width: 82px;
+  height: 707px;
+  background: #131313;
+  z-index: 2;
+}
+
+.intro aside .intro--instagram {
+  position: absolute;
+  left: 9.27%;
+  top: 50.05%;
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #E3B873;
+  z-index: 2;
+}
+
+.intro--scroll-down {
   width: 247px;
   height: 97px;
   position: absolute;
   left: 0%;
   bottom: 1.74%;
   background: #131313;
+}
+
+.intro button span {
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.intro--button-painted_over {
+  position: absolute;
+  left: 4.3%;
+  top: 57%;
+  width: 207px;
+  height: 51px;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.intro--button-unpainted {
+  position: absolute;
+  left: 21%;
+  top: 57%;
+  width: 207px;
+  height: 51px;
+  border: 1px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  background: none;
+  z-index: 2;
+}
+
+.intro--scroll-down {
+  position: absolute;
+  left: 0%;
+  bottom: 9.74%;
+  width: 247px;
+  height: 97px;
+  background: #131313;
+  color: white;
+  z-index: 2;
+}
+
+.intro--scroll-down span {
+  position: absolute;
+  left: 20%;
+  top: 42%;
+  bottom: 92.13%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.intro--scroll-down img {
+  position: absolute;
+  right: 22.23%;
+  top: 34.64%;
 }
 
 .completed-projects {
