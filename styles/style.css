@@ -20,14 +20,17 @@
 
 .wrapper {
   position: relative;
-  width: 1438px;
+  width: 100%;
+  max-width: 1438px;
   height: 10150px;
   margin: 0 auto;
   background: #FFFFFF;
 }
 
 header {
-  height: 83px;
+  position: relative;
+  width: 100%;
+  height: 0.81%;
   background: #131313;
 }
 
@@ -36,10 +39,10 @@ header .name {
   position: absolute;
   left: 5.7%;
   right: 81.8%;
-  top: 0.36%;
-  bottom: 99.54%;
+  top: 44.57%;
+  height: 12.2%;
   font-family: FuturaDemiC;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 16px;
   text-transform: uppercase;
   color: #E3B873;
@@ -47,11 +50,10 @@ header .name {
 
 header .header-nav {
   position: absolute;
-  height: 10px;
+  height: 12.2%;
   left: 10.84%;
   right: 34.73%;
-  top: 0.36%;
-  bottom: 99.54%;
+  top: 44.57%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -61,22 +63,21 @@ header .header-nav--ul {
   position: absolute;
   left: 24.84%;
   right: 34.73%;
-  top: 0.36%;
-  bottom: 99.54%;
-  width: 581.43px;
-  height: 10px;
+  top: 44.57%;
+  width: 40.43%;
+  height: 0.09%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: FuturaBookC;
-  font-size: 14px;
+  font-size: 0.85em;
   line-height: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
 header .header-nav--ul li:not(:first-child) {
-  margin-left: 47px;
+  margin-left: 8.08%;
 }
 
 header .header-nav--ul a {
@@ -86,14 +87,12 @@ header .header-nav--ul a {
 
 header .header-phone {
   position: absolute;
-  left: 69.96%;
   right: 21.28%;
-  top: 0.36%;
-  bottom: 99.48%;
-  width: 126px;
-  height: 16px;
+  top: 44.57%;
+  width: 8.76%;
+  height: 19.2%;
   font-family: FuturaDemiC;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 16px;
   text-align: right;
   -webkit-text-decoration-line: underline;
@@ -104,36 +103,39 @@ header .header-phone {
 header .header-RequestCall {
   position: absolute;
   right: 6.95%;
-  top: 0.24%;
-  bottom: 99.4%;
-  width: 161px;
-  height: 37px;
+  top: 28.9%;
+  width: 11.2%;
+  height: 45.1%;
   background: #E3B873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-  border-radius: 2px;
+  border-radius: 5.4%;
 }
 
 header .header-RequestCall span {
   position: absolute;
   left: 24.14%;
-  top: 28.36%;
-  bottom: 99.53%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  top: 35.13%;
+  width: 59.38%;
+  height: 30%;
   font-family: FuturaDemiC;
-  font-family: FuturaDemiC;
-  font-size: 13px;
+  font-size: 0.8125em;
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
+main {
+  width: 100%;
+  max-width: 1438px;
+  height: 99.19%;
+}
+
 .intro {
   position: relative;
-  height: 707px;
+  width: 100%;
+  height: 7.02%;
 }
 
 .intro::before {
@@ -148,12 +150,13 @@ header .header-RequestCall span {
 }
 
 .intro--content {
-  width: 1358px;
-  height: 707px;
+  width: 94.4%;
+  height: 100%;
   position: absolute;
   right: 0%;
   top: 0px;
   background-image: url(/assets/images/intro-backgound.png);
+  background-size: cover;
 }
 
 .intro--content h2 {
@@ -163,7 +166,7 @@ header .header-RequestCall span {
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 2.5em;
   line-height: 53px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -179,26 +182,24 @@ header .header-RequestCall span {
   left: 3.87%;
   top: 40%;
   font-family: FuturaBookC;
-  font-size: 22px;
+  font-size: 1.375em;
   line-height: 30px;
   color: #FFFFFF;
   z-index: 2;
 }
 
 .intro aside {
-  position: absolute;
-  width: 82px;
-  height: 707px;
+  width: 5.6%;
+  height: 100%;
   background: #131313;
   z-index: 2;
 }
 
 .intro aside .intro--instagram {
   position: absolute;
-  left: 9.27%;
   top: 50.05%;
   font-family: FuturaDemiC;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
@@ -208,18 +209,9 @@ header .header-RequestCall span {
   z-index: 2;
 }
 
-.intro--scroll-down {
-  width: 247px;
-  height: 97px;
-  position: absolute;
-  left: 0%;
-  bottom: 1.74%;
-  background: #131313;
-}
-
 .intro button span {
   font-family: FuturaDemiC;
-  font-size: 13px;
+  font-size: 0.81em;
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -230,8 +222,8 @@ header .header-RequestCall span {
   position: absolute;
   left: 4.3%;
   top: 57%;
-  width: 207px;
-  height: 51px;
+  width: 15.24%;
+  height: 7.21%;
   background: #E3B873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
@@ -243,8 +235,8 @@ header .header-RequestCall span {
   position: absolute;
   left: 21%;
   top: 57%;
-  width: 207px;
-  height: 51px;
+  width: 15.24%;
+  height: 7.21%;
   border: 1px solid #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -257,7 +249,7 @@ header .header-RequestCall span {
   position: absolute;
   left: 0%;
   bottom: -3%;
-  width: 247px;
+  width: 17.17%;
   height: 97px;
   background: #131313;
   color: white;
@@ -272,7 +264,7 @@ header .header-RequestCall span {
   font-family: Yeseva One;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 19px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -284,40 +276,54 @@ header .header-RequestCall span {
   top: 34.64%;
 }
 
-.completed-projects {
-  width: 1431px;
+.completed_projects {
+  width: 100%;
   height: 1024px;
-  background: #6b2929;
+  background: pink;
   margin-top: 20px;
 }
 
-.completed-projects--cities-nav {
+.completed_projects--cities_nav {
+  position: absolute;
+  left: 41.31%;
+  right: 15.37%;
+  top: 8.84%;
+  bottom: 90.93%;
   width: 623px;
   height: 24px;
 }
 
-.completed-projects--description {
+.completed_projects--cities_nav .flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.completed_projects--description {
   width: 442px;
   height: 390px;
 }
 
-.completed-projects--slider--center {
+.completed_projects--slider--center {
   width: 844px;
   height: 482px;
 }
 
-.completed-projects--slider--right {
+.completed_projects--slider--right {
   width: 144px;
   height: 482px;
 }
 
-.completed-projects--online-control {
+.completed_projects--online-control {
   widows: 196px;
   height: 66, 79px;
 }
 
 .online-control {
-  width: 1438px;
+  width: 100%;
   height: 1432px;
 }
 
@@ -332,7 +338,7 @@ header .header-RequestCall span {
 }
 
 .types-of-repair {
-  width: 1438px;
+  width: 100%;
   height: 958px;
 }
 
@@ -352,7 +358,7 @@ header .header-RequestCall span {
 }
 
 .place-order {
-  width: 1436px;
+  width: 100%;
   height: 968px;
 }
 
