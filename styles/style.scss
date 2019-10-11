@@ -73,7 +73,7 @@ header {
 
     & .header-phone {
         position: absolute;
-      
+
         right: 21.28%;
         top: 44.57%;
         width: 8.76%;
@@ -103,7 +103,7 @@ header {
             position: absolute;
             left: 24.14%;
             top: 35.13%;
-           
+
             width: 59.38%;
             height: 30%;
             font-family: FuturaDemiC;
@@ -274,11 +274,12 @@ main {
     }
 }
 
-.completed_projects {
+.portfolio {
     width: 100%;
-    height: 1024px;
+    height: 10.17%;
     background: pink;
     margin-top: 20px;
+    background: #131313;
 
     &--cities_nav {
         position: absolute;
@@ -287,30 +288,183 @@ main {
         right: 15.37%;
         top: 8.84%;
         bottom: 90.93%;
-        width: 623px;
-        height: 24px;
+        width: 43.32%;
+        height: 0.24%;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: $px14;
+        line-height: 19px;
+        text-transform: uppercase;
+
 
         & .flex_container {
             display: flex;
             justify-content: space-between;
+
+            &--elem:hover {
+                color: $col;
+                text-decoration: underline yellow;
+            }
         }
 
     }
 
-    &--description {
-        width: 442px;
-        height: 390px;
+    & .completed_projects {
+        position: absolute;
+        left: 7.02%;
+        right: 62.24%;
+        top: 9.52%;
+        bottom: 86.64%;
+        width: 30.73%;
+
+        color: white;
+
+        &--headline {
+            position: absolute;
+
+            width: 57.23%;
+            height: 16.92%;
+
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            line-height: 37px;
+            letter-spacing: -0.07em;
+            text-transform: uppercase;
+
+            color: $col;
+
+        }
+
+        &--description {
+            position: absolute;
+
+            top: 25.64%;
+            bottom: 88.65%;
+            width: 100%;
+            height: 22.05%;
+            font-family: FuturaBookC;
+            font-size: 18px;
+            line-height: 29px;
+            color: #FFFFFF;
+
+        }
+
+        & h3 {
+            height: 100%;
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.125em;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: $col;
+        }
+
+        & span {
+            font-family: FuturaBookC;
+            font-size: 15px;
+            line-height: 20px;
+
+            color: #FFFFFF;
+
+        }
+
+        &--city {
+
+            position: absolute;
+            top: 58.46%;
+            width: 14.93%;
+            height: 5.64%;
+
+            & span {
+                position: absolute;
+                width: 243.93%;
+                height: 190.90%;
+                top: 140.9%;
+
+            }
+        }
+
+        &--apartment_area {
+            position: absolute;
+            top: 58.46%;
+            left: 42.98%;
+            width: 48.19%;
+            height: 5.64%;
+
+            & span {
+                position: absolute;
+                width: 23.94%;
+                height: 95.45%;
+                top: 140.9%;
+            }
+        }
+
+        &--repair_time {
+            position: absolute;
+            width: 35.29%;
+            height: 5.64%;
+            bottom: 8.46%;
+
+            & span {
+                position: absolute;
+                width: 66.02%;
+                height: 109.99%;
+                top: 178.32%;
+            }
+        }
+
+        &--repair_cost {
+            position: absolute;
+            width: 49.32%;
+            height: 5.64%;
+            bottom: 8.46%;
+            left: 42.98%;
+
+            & span {
+                position: absolute;
+                width: 52.75%;
+                height: 5.64%;
+                top: 178.32%;
+            }
+        }
     }
 
-    &--slider--center {
-        width: 844px;
-        height: 482px;
+    &--slider {
+        position: absolute;
+        left: 41.24%;
+        right: 0.14%;
+        top: 9.52%;
+       
+        width: 58.62%;
+        height: 47.11%;
+        overflow: hidden;
+
+        &-center {
+            position: absolute;
+            left: 41.24%;
+            right: 11.54%;
+            top: 9.52%;
+            //  width: 47.15%;
+
+        }
+
+        &-right {
+            position: absolute;
+            left: 89.92%;
+            right: -37.13%;
+            top: 9.52%;
+            bottom: 85.73%;
+           // width: 47.15%;
+
+
+        }
     }
 
-    &--slider--right {
-        width: 144px;
-        height: 482px;
-    }
+
 
     &--online-control {
         widows: 196px;

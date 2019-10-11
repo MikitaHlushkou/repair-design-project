@@ -276,24 +276,31 @@ main {
   top: 34.64%;
 }
 
-.completed_projects {
+.portfolio {
   width: 100%;
-  height: 1024px;
+  height: 10.17%;
   background: pink;
   margin-top: 20px;
+  background: #131313;
 }
 
-.completed_projects--cities_nav {
+.portfolio--cities_nav {
   position: absolute;
   left: 41.31%;
   right: 15.37%;
   top: 8.84%;
   bottom: 90.93%;
-  width: 623px;
-  height: 24px;
+  width: 43.32%;
+  height: 0.24%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 19px;
+  text-transform: uppercase;
 }
 
-.completed_projects--cities_nav .flex_container {
+.portfolio--cities_nav .flex_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,22 +309,150 @@ main {
           justify-content: space-between;
 }
 
-.completed_projects--description {
-  width: 442px;
-  height: 390px;
+.portfolio--cities_nav .flex_container--elem:hover {
+  color: #E3B873;
+  -webkit-text-decoration: underline yellow;
+          text-decoration: underline yellow;
 }
 
-.completed_projects--slider--center {
-  width: 844px;
-  height: 482px;
+.portfolio .completed_projects {
+  position: absolute;
+  left: 7.02%;
+  right: 62.24%;
+  top: 9.52%;
+  bottom: 86.64%;
+  width: 30.73%;
+  color: white;
 }
 
-.completed_projects--slider--right {
-  width: 144px;
-  height: 482px;
+.portfolio .completed_projects--headline {
+  position: absolute;
+  width: 57.23%;
+  height: 16.92%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
 }
 
-.completed_projects--online-control {
+.portfolio .completed_projects--description {
+  position: absolute;
+  top: 25.64%;
+  bottom: 88.65%;
+  width: 100%;
+  height: 22.05%;
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.portfolio .completed_projects h3 {
+  height: 100%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.portfolio .completed_projects span {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.portfolio .completed_projects--city {
+  position: absolute;
+  top: 58.46%;
+  width: 14.93%;
+  height: 5.64%;
+}
+
+.portfolio .completed_projects--city span {
+  position: absolute;
+  width: 243.93%;
+  height: 190.90%;
+  top: 140.9%;
+}
+
+.portfolio .completed_projects--apartment_area {
+  position: absolute;
+  top: 58.46%;
+  left: 42.98%;
+  width: 48.19%;
+  height: 5.64%;
+}
+
+.portfolio .completed_projects--apartment_area span {
+  position: absolute;
+  width: 23.94%;
+  height: 95.45%;
+  top: 140.9%;
+}
+
+.portfolio .completed_projects--repair_time {
+  position: absolute;
+  width: 35.29%;
+  height: 5.64%;
+  bottom: 8.46%;
+}
+
+.portfolio .completed_projects--repair_time span {
+  position: absolute;
+  width: 66.02%;
+  height: 109.99%;
+  top: 178.32%;
+}
+
+.portfolio .completed_projects--repair_cost {
+  position: absolute;
+  width: 49.32%;
+  height: 5.64%;
+  bottom: 8.46%;
+  left: 42.98%;
+}
+
+.portfolio .completed_projects--repair_cost span {
+  position: absolute;
+  width: 52.75%;
+  height: 5.64%;
+  top: 178.32%;
+}
+
+.portfolio--slider {
+  position: absolute;
+  left: 41.24%;
+  right: 0.14%;
+  top: 9.52%;
+  width: 58.62%;
+  height: 47.11%;
+  overflow: hidden;
+}
+
+.portfolio--slider-center {
+  position: absolute;
+  left: 41.24%;
+  right: 11.54%;
+  top: 9.52%;
+}
+
+.portfolio--slider-right {
+  position: absolute;
+  left: 89.92%;
+  right: -37.13%;
+  top: 9.52%;
+  bottom: 85.73%;
+}
+
+.portfolio--online-control {
   widows: 196px;
   height: 66, 79px;
 }
