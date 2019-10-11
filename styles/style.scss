@@ -112,7 +112,7 @@ header {
 
 .intro {
     position: relative;
-    height: 838px;
+    height: 707px;
 
     &::before {
         content: '';
@@ -242,7 +242,7 @@ header {
 &--scroll-down{
     position: absolute;
 left: 0%;
-bottom: 9.74%;
+bottom: -3%;
 width: 247px;
 height: 97px;
 background: #131313;
@@ -280,7 +280,7 @@ top: 34.64%;
     width: 1431px;
     height: 1024px;
     background: #6b2929;
-
+margin-top:20px;
     &--cities-nav {
         width: 623px;
         height: 24px;

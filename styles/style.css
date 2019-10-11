@@ -133,7 +133,7 @@ header .header-RequestCall span {
 
 .intro {
   position: relative;
-  height: 838px;
+  height: 707px;
 }
 
 .intro::before {
@@ -256,7 +256,7 @@ header .header-RequestCall span {
 .intro--scroll-down {
   position: absolute;
   left: 0%;
-  bottom: 9.74%;
+  bottom: -3%;
   width: 247px;
   height: 97px;
   background: #131313;
@@ -288,6 +288,7 @@ header .header-RequestCall span {
   width: 1431px;
   height: 1024px;
   background: #6b2929;
+  margin-top: 20px;
 }
 
 .completed-projects--cities-nav {
