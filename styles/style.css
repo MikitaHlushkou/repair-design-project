@@ -1,14 +1,135 @@
+@font-face {
+  font-family: FuturaBookC;
+  src: url(/assets/fonts/futurabookc.otf);
+}
+
+@font-face {
+  font-family: FuturaDemiC;
+  src: url(/assets/fonts/futurademic.otf);
+}
+
+@font-face {
+  font-family: FuturaMediumC;
+  src: url(/assets/fonts/futuramediumc.otf);
+}
+
+@font-face {
+  font-family: Yeseva One;
+  src: url(/assets/fonts/YesevaOne-Regular.ttf);
+}
+
 .wrapper {
   position: relative;
   width: 1438px;
   height: 10150px;
+  margin: 0 auto;
   background: #FFFFFF;
 }
 
 header {
   height: 83px;
-  background: pink;
+  background: #131313;
   border: 1px solid grey;
+}
+
+header .name {
+  color: yellow;
+  position: absolute;
+  left: 5.7%;
+  right: 81.8%;
+  top: 0.36%;
+  bottom: 99.54%;
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+header .header-nav {
+  position: absolute;
+  height: 10px;
+  left: 10.84%;
+  right: 34.73%;
+  top: 0.36%;
+  bottom: 99.54%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-nav--ul {
+  position: absolute;
+  left: 24.84%;
+  right: 34.73%;
+  top: 0.36%;
+  bottom: 99.54%;
+  width: 581.43px;
+  height: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: FuturaBookC;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+header .header-nav--ul li:not(:first-child) {
+  margin-left: 47px;
+}
+
+header .header-nav--ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+header .header-phone {
+  position: absolute;
+  left: 69.96%;
+  right: 21.28%;
+  top: 0.36%;
+  bottom: 99.48%;
+  width: 126px;
+  height: 16px;
+  font-family: FuturaDemiC;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #E3B873;
+}
+
+header .header-RequestCall {
+  position: absolute;
+  right: 6.95%;
+  top: 0.24%;
+  bottom: 99.4%;
+  width: 161px;
+  height: 37px;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+}
+
+header .header-RequestCall span {
+  position: absolute;
+  left: 24.14%;
+  top: 28.36%;
+  bottom: 99.53%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: FuturaDemiC;
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .top-frame {

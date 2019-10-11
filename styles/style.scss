@@ -1,15 +1,119 @@
+@import "fonts.scss";
+
 .wrapper {
     position: relative;
     width: 1438px;
     height: 10150px;
-
+    margin: 0 auto;
     background: #FFFFFF;
 }
 
 header {
     height: 83px;
-    background: pink;
+    background: #131313;
     border: 1px solid grey;
+
+    & .name {
+        color: yellow;
+        position: absolute;
+        left: 5.7%;
+        right: 81.8%;
+        top: 0.36%;
+        bottom: 99.54%;
+        //width: 179.74px;
+        //height: 10px;
+        //margin-left:82px;
+        font-family: FuturaDemiC;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+                color: #E3B873;
+    }
+
+    & .header-nav {
+        position: absolute;
+        height: 10px;
+        left: 10.84%;
+        right: 34.73%;
+        top: 0.36%;
+        bottom: 99.54%;
+        align-items: center;
+
+        &--ul {
+            position: absolute;
+            left: 24.84%;
+            right: 34.73%;
+            top: 0.36%;
+            bottom: 99.54%;
+            width: 581.43px;
+            height: 10px;
+            display: flex;
+            font-family: FuturaBookC;
+font-size: 14px;
+line-height: 16px;
+text-transform: uppercase;
+color: #FFFFFF;
+            //justify-content: space-between;
+            & li:not(:first-child) {
+                margin-left: 47px;
+            }
+& a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+        }
+    }
+
+    & .header-phone {
+        position: absolute;
+        left: 69.96%;
+        right: 21.28%;
+        top: 0.36%;
+        bottom: 99.48%;
+        width: 126px;
+        height: 16px;
+        //font-family: FuturaDemiC;
+        font-family: FuturaDemiC;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        text-decoration-line: underline;
+        
+        color: #E3B873;
+        
+    }
+
+    & .header-RequestCall {
+        position: absolute;
+              right: 6.95%;
+        top: 0.24%;
+        bottom: 99.4%;
+width: 161px;
+height: 37px;
+background: #E3B873;
+box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+border-radius: 2px;
+
+        & span {
+
+            position: absolute;
+            left: 24.14%;
+            
+            top: 28.36%;
+            bottom: 99.53%;
+            width: fit-content;
+
+            font-family: FuturaDemiC;
+            font-family: FuturaDemiC;
+            font-size: 13px;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            
+            color: #FFFFFF;
+            
+        }
+    }
 }
 
 .top-frame {
@@ -103,31 +207,38 @@ header {
 .types-of-repair {
     width: 1438px;
     height: 958px;
-    &--logo{
+
+    &--logo {
         width: 257px;
         height: 67px;
     }
-    &--container{
+
+    &--container {
         width: 1236px;
-        height:  608px;
-        & content{
+        height: 608px;
+
+        & content {
             width: 392px;
-height:  421px;
+            height: 421px;
         }
     }
 }
-.place-order{
+
+.place-order {
     width: 1436px;
-  height: 968px;
-  &--steps-of-order{
-    width: 773px;
-    height: 691.26px;
-  }
-  &--form-container{
-    width: 506px;
-height: 640px;
-  }
-  }
+    height: 968px;
+
+    &--steps-of-order {
+        width: 773px;
+        height: 691.26px;
+    }
+
+    &--form-container {
+        width: 506px;
+        height: 640px;
+    }
+}
+
 /*div {
     background-color: aqua;
     border: 1px solid red;
