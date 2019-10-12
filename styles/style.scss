@@ -786,17 +786,26 @@ main {
 }
 
 .consultation_order {
+    position: relative;
     width: 100%;
-    height: 968px;
+    height: 9.62%;
+    //968px- высота
+    background:pink;
 
     &--steps-of-order {
-        width: 773px;
-        height: 691.26px;
+        position: absolute;
+        width: 48.8%;
+        height: 66.63%;
+        & img{
+            object-position: -170px 0px;
+        }
+        
     }
 
     &--form-container {
-        width: 506px;
-        height: 640px;
+        width: 35.18%;
+        height: 52.58%;
+        background:darkgreen;
     }
 }
 
