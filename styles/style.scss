@@ -244,7 +244,7 @@ main {
         left: 0%;
         bottom: -3%;
         width: 17.17%;
-        height: 97px;
+        height: 13.73%;
         background: #131313;
         color: white;
         z-index: 2;
@@ -329,7 +329,7 @@ main {
             font-family: Yeseva One;
             font-style: normal;
             font-weight: normal;
-            font-size: 27px;
+            font-size: 1.6875em;
             line-height: 37px;
             letter-spacing: -0.07em;
             text-transform: uppercase;
@@ -346,7 +346,7 @@ main {
             width: 100%;
             height: 22.05%;
             font-family: FuturaBookC;
-            font-size: 18px;
+            font-size: 1.125em;
             line-height: 29px;
             color: #FFFFFF;
 
@@ -365,7 +365,7 @@ main {
 
         & span {
             font-family: FuturaBookC;
-            font-size: 15px;
+            font-size: 0.9375em;
             line-height: 20px;
 
             color: #FFFFFF;
@@ -438,52 +438,235 @@ main {
         left: 41.24%;
         right: 0.14%;
         top: 9.52%;
-       
+
         width: 58.62%;
-        height: 47.11%;
+        height: 4.75%;
         overflow: hidden;
 
         &-center {
             position: absolute;
-            left: 41.24%;
-            right: 11.54%;
-            top: 9.52%;
+
+            // left: 41.24%;
+            // right: 11.54%;
+            // top: 9.52%;
+            width: 80.54%;
+            height: 100%;
             //  width: 47.15%;
 
         }
 
         &-right {
             position: absolute;
-            left: 89.92%;
-            right: -37.13%;
-            top: 9.52%;
-            bottom: 85.73%;
-           // width: 47.15%;
+            left: 83.13%;
+            height: 100%;
+            // right: -37.13%;
+            // top: 9.52%;
+            // bottom: 85.73%;
+            // width: 47.15%;
+
+            & .slider_right_button {
+                position: absolute;
+                top: 43.62%;
+                left: 43.62%;
+                width: 37.31%;
+                height: 11.18%;
+                object-fit: contain;
+            }
+        }
+    }
+
+
+    &--change_project {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        left: 7.09%;
+        right: 78.6%;
+        top: 14.15%;
+        bottom: 85.72%;
+        width: 14.30%;
+        height: 0.13%;
+
+        &>div:not(.portfolio--change_project-center) {
+            width: 20.15%;
+            height: 100%;
+            background-image: url(/assets/images/arrow-change-project.svg);
+
+        }
+
+        &-left {
+            transform: rotate(-180deg);
+        }
+
+        &-center {
+            display: flex;
+            justify-content: space-between;
+            width: 31%;
+
+            & div {
+                width: 15.24%;
+                height: 72.06%;
+                background-image: url(/assets/images/circle-change-project.svg);
+
+                &:hover {
+                    background: #FFFFFF;
+                    border-radius: 1.875em;
+                }
+            }
+        }
+    }
+
+    &--online-control {
+        position: absolute;
+        top: 15.65%;
+        left: 43.32%;
+        width: 13.63%;
+        height: 0.65%;
+        background-image: url(/assets/images/online-control.svg);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+
+        & span {
+            position: absolute;
+            width: 100%;
+            font-family: Yeseva One;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
 
 
         }
     }
 
+    &--video {
+        position: absolute;
+        left: 21.63%;
+        right: 21.56%;
+        top: 16.44%;
 
 
-    &--online-control {
-        widows: 196px;
-        height: 66, 79px;
+        width: 56.81%;
+        height: 4.27%;
     }
 }
 
 .online-control {
     width: 100%;
-    height: 1432px;
+    height: 7.09%;
 
     &--description {
-        width: 681px;
-        height: 130.91px;
+        position: absolute;
+        left: 26.36%;
+        right: 26.29%;
+        top: 21.38%;
+        bottom: 77.33%;
+        width: 47.35%;
+        height: 1.29%;
+
+        & p {
+
+
+            height: 100%;
+            font-family: FuturaBookC;
+            font-size: 20px;
+            line-height: 34px;
+            text-align: center;
+
+            color: #363636;
+        }
     }
 
     &--form {
-        width: 769px;
-        height: 51px;
+        position: absolute;
+        left: 23.3%;
+        right: 23.23%;
+        top: 23.58%;
+        bottom: 75.92%;
+        width: 53.47%;
+        height: 0.50%;
+
+        & form {
+            height: 100%;
+
+            & [type=text] {
+                position: absolute;
+                bottom: 0%;
+                width: 30.04%;
+                height: 57.7%;
+                background: none;
+                border: none;
+                border-bottom: 1px solid black;
+                /*for tests 
+                background: green;
+ */
+            }
+
+            & [type=submit] {
+                position: absolute;
+                right: 0%;
+                background: #E3B873;
+                box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+                border-radius: 2px;
+                width: 26%;
+                height: 100%;
+                font-family: FuturaDemiC;
+                font-size: 15px;
+                line-height: 26px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                border: none;
+
+            }
+
+            & .username-input {
+                left: 0%;
+            }
+
+            & .phone-input {
+                right: 32.37%;
+            }
+
+            & label {
+                position: absolute;
+                height: 26.6%;
+                font-family: FuturaBookC;
+                font-size: 15px;
+                line-height: 20px;
+                color: rgba(54, 54, 54, 0.5);
+
+                &:first-child {
+                    left: 0%;
+
+                }
+
+                &:not(:first-child):not(:last-child) {
+                    right: 58%;
+                }
+
+                &:last-child {
+                    bottom: -88%;
+                    left: 35%;
+                    font-family: FuturaBookC;
+                    font-size: 1em;
+                    line-height: 22px;
+
+                    color: #181818;
+
+                }
+            }
+
+            & [type=checkbox] {
+                position: absolute;
+                bottom: -92%;
+                left: 31%;
+            }
+        }
+
     }
 }
 
