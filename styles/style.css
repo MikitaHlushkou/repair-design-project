@@ -18,6 +18,10 @@
   src: url(/assets/fonts/YesevaOne-Regular.ttf);
 }
 
+* img {
+  max-width: 100% !important;
+}
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -135,13 +139,13 @@ header .header-RequestCall span {
 main {
   width: 100%;
   max-width: 1438px;
-  height: 99.19%;
+  height: 97.95%;
 }
 
 .intro {
   position: relative;
   width: 100%;
-  height: 7.02%;
+  height: 7.93%;
 }
 
 .intro::before {
@@ -284,8 +288,7 @@ g .intro--content h2 span {
 
 .portfolio {
   width: 100%;
-  height: 11.08%;
-  background: pink;
+  height: 11.22%;
   margin-top: 20px;
   background: #131313;
 }
@@ -548,7 +551,7 @@ g .intro--content h2 span {
 
 .online-control {
   width: 100%;
-  height: 7.09%;
+  height: 7.22%;
 }
 
 .online-control--description {
@@ -657,7 +660,7 @@ g .intro--content h2 span {
 
 .types-of-repair {
   width: 100%;
-  height: 8.39%;
+  height: 8.35%;
 }
 
 .types-of-repair--logo {
@@ -774,7 +777,7 @@ g .intro--content h2 span {
 .consultation_order {
   position: relative;
   width: 100%;
-  height: 9.62%;
+  height: 9.74%;
 }
 
 .consultation_order--steps-of-order {
@@ -924,7 +927,7 @@ g .intro--content h2 span {
 
 .design_types {
   position: relative;
-  height: 8.58%;
+  height: 8.69%;
 }
 
 .design_types--headline {
@@ -983,7 +986,7 @@ g .intro--content h2 span {
 .design_project {
   position: relative;
   width: 100%;
-  height: 10.72%;
+  height: 10.93%;
 }
 
 .design_project--logo {
@@ -1122,20 +1125,19 @@ g .intro--content h2 span {
 
 .working_steps {
   position: relative;
-  height: 7.45%;
+  height: 7.55%;
   background: brown;
 }
 
 .our_team {
   position: relative;
-  height: 9.26%;
+  height: 9.39%;
   background: purple;
 }
 
 .our_clients {
   position: relative;
-  height: 6.73%;
-  background: pink;
+  height: 6.82%;
 }
 
 .our_clients--logo {
@@ -1224,5 +1226,159 @@ g .intro--content h2 span {
   background: #E3B873;
   -webkit-box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
           box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.contact_info {
+  position: relative;
+  height: 11.96%;
+  background: pink;
+}
+
+.contact_info--question_form_container {
+  position: relative;
+  top: 7.63%;
+  left: 20.58%;
+  width: 65.5%;
+  height: 35.02%;
+  background: purple;
+}
+
+.contact_info--adress {
+  position: relative;
+  width: 40.95%;
+  height: 11.72%;
+  left: 29.49%;
+  top: 10.6%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.contact_info--adress img {
+  position: relative;
+  top: 22%;
+  right: 36%;
+}
+
+.contact_info--adress img:last-child {
+  right: 34%;
+}
+
+.contact_info--map {
+  position: relative;
+  top: 8%;
+  left: 22%;
+  width: 64.32%;
+  height: 36.22%;
+}
+
+footer {
+  width: 100%;
+  height: 1.31%;
+  background: #131313;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: middle;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 87.3%;
+  height: 100%;
+  padding-top: 2.8%;
+  margin: 0 auto;
+}
+
+footer .container .header-RequestCall {
+  margin-top: -1%;
+}
+
+footer .name {
+  color: yellow;
+  height: 12.2%;
+  font-family: FuturaDemiC;
+  font-size: 0.875em;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+footer .header-nav {
+  min-width: 46.3%;
+  height: 12.2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .header-nav--ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  font-family: FuturaBookC;
+  font-size: 0.85em;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+footer .header-nav--ul li:not(:first-child) {
+  margin-left: 8.08%;
+}
+
+footer .header-nav--ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+footer .header-phone {
+  min-width: 10.04%;
+  height: 19.2%;
+  font-family: FuturaDemiC;
+  font-size: 0.875em;
+  line-height: 16px;
+  text-align: right;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #E3B873;
+}
+
+footer .header-RequestCall {
+  position: relative;
+  min-width: 12.83%;
+  height: 45.1%;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 5.4%;
+}
+
+footer .header-RequestCall span {
+  position: absolute;
+  top: 32%;
+  left: 22%;
+  min-width: 59.38%;
+  height: 30%;
+  font-family: FuturaDemiC;
+  font-size: 0.8125em;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

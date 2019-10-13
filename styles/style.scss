@@ -3,6 +3,10 @@ $col:#E3B873;
 $px14: 0.875em;
 $mainHeight:10067;
 
+* img {
+    max-width: 100% !important;
+}
+
 .wrapper {
     position: relative;
     width: 100%;
@@ -124,13 +128,13 @@ header {
 main {
     width: 100%;
     max-width: 1438px;
-    height: 99.19%;
+    height: 97.95%;
 }
 
 .intro {
     position: relative;
     width: 100%;
-    height: 7.02%;
+    height: 7.93%;
 
     &::before {
         content: '';
@@ -281,8 +285,8 @@ main {
 
 .portfolio {
     width: 100%;
-    height: 11.08%;
-    background: pink;
+    height: 11.22%;
+
     margin-top: 20px;
     background: #131313;
 
@@ -561,7 +565,7 @@ main {
 
 .online-control {
     width: 100%;
-    height: 7.09%;
+    height: 7.22%;
 
     &--description {
         position: absolute;
@@ -677,7 +681,7 @@ main {
 
 .types-of-repair {
     width: 100%;
-    height: 8.39%;
+    height: 8.35%;
 
     &--logo {
         position: absolute;
@@ -794,7 +798,7 @@ main {
 .consultation_order {
     position: relative;
     width: 100%;
-    height: 9.62%;
+    height: 9.74%;
     //968px- высота
 
 
@@ -946,7 +950,7 @@ main {
 
 .design_types {
     position: relative;
-    height: 8.58%;
+    height: 8.69%;
 
 
     &--headline {
@@ -999,7 +1003,7 @@ main {
 .design_project {
     position: relative;
     width: 100%;
-    height: 10.72%;
+    height: 10.93%;
 
 
     &--logo {
@@ -1153,20 +1157,20 @@ main {
 
 .working_steps {
     position: relative;
-    height: 7.45%;
+    height: 7.55%;
     background: brown;
 }
 
 .our_team {
     position: relative;
-    height: 9.26%;
+    height: 9.39%;
     background: purple;
 }
 
 .our_clients {
     position: relative;
-    height: 6.73%;
-    background: pink;
+    height: 6.82%;
+
 
     &--logo {
         position: absolute;
@@ -1248,15 +1252,175 @@ main {
 
                 color: #959595;
             }
-       &--price_label{
+
+            &--price_label {
+                position: relative;
+                width: 78.1%;
+                height: 17.8%;
+                bottom: 0%;
+                top: 24%;
+                background: #E3B873;
+                box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+            }
+        }
+    }
+}
+
+.contact_info {
+    position: relative;
+    height: 11.96%;
+    background: pink;
+
+    &--question_form_container {
         position: relative;
-        width: 78.1%;
-        height: 17.8%;
-        bottom: 0%;
-        top:24%;
+        top: 7.63%;
+        left: 20.58%;
+        width: 65.5%;
+        height: 35.02%;
+        background: purple;
+    }
+
+    &--adress {
+        position: relative;
+        width: 40.95%;
+        height: 11.72%;
+        left: 29.49%;
+        top: 10.6%;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E3B873;
+
+        & img {
+            position: relative;
+            top: 22%;
+            right: 36%;
+
+            &:last-child {
+                right: 34%;
+            }
+        }
+    }
+
+    &--map {
+        position: relative;
+        top: 8%;
+        left: 22%;
+        width: 64.32%;
+        height: 36.22%;
+
+    }
+}
+
+footer {
+
+    width: 100%;
+    height: 1.31%;
+    background: #131313;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        vertical-align: middle;
+        flex-wrap: wrap;
+
+        width: 87.3%;
+        height: 100%;
+        padding-top: 2.8%;
+        margin: 0 auto;
+
+        & .header-RequestCall {
+            margin-top: -1%;
+        }
+    }
+
+    & .name {
+        color: yellow;
+        height: 12.2%;
+        font-family: FuturaDemiC;
+        font-size: 0.875em;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $col;
+    }
+
+    & .header-nav {
+
+
+        min-width: 46.3%;
+        height: 12.2%;
+        align-items: center;
+
+        &--ul {
+
+            height: 100%;
+            display: flex;
+            flex-basis: auto;
+            flex-shrink: 1;
+            font-family: FuturaBookC;
+            font-size: 0.85em;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            //justify-content: space-between;
+            & li {
+                //п display:inline-block;
+            }
+
+            & li:not(:first-child) {
+                margin-left: 8.08%;
+            }
+
+            & a {
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    & .header-phone {
+
+
+
+        min-width: 10.04%;
+        height: 19.2%;
+        //font-family: FuturaDemiC;
+        font-family: FuturaDemiC;
+        font-size: $px14;
+        line-height: 16px;
+        text-align: right;
+        text-decoration-line: underline;
+
+        color: #E3B873;
+
+    }
+
+    & .header-RequestCall {
+
+        position: relative;
+        min-width: 12.83%;
+        height: 45.1%;
         background: #E3B873;
-        box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
-       }
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 5.4%;
+
+        & span {
+            position: absolute;
+            top: 32%;
+            left: 22%;
+            min-width: 59.38%;
+            height: 30%;
+            font-family: FuturaDemiC;
+            font-size: 0.8125em;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
         }
     }
 }
