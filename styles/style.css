@@ -775,7 +775,6 @@ g .intro--content h2 span {
   position: relative;
   width: 100%;
   height: 9.62%;
-  background: pink;
 }
 
 .consultation_order--steps-of-order {
@@ -785,6 +784,7 @@ g .intro--content h2 span {
   background-image: url(/assets/images/consultation-steps.png);
   background-position: -170px 0px;
   background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .consultation_order--form-container {
@@ -881,33 +881,141 @@ g .intro--content h2 span {
   background: #E3B873;
 }
 
-.consultation_order--form-container .consultation_form_submit--label {
+.consultation_order--form-container .consultation_form_submit--button_text {
   position: absolute;
   width: 100%;
   height: 100%;
+  background: none;
+  border: none;
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
-/*div {
-    background-color: aqua;
-    border: 1px solid red;
+.consultation_order--advantage_block {
+  position: absolute;
+  width: 30.66%;
+  height: 7.43%;
+  right: 9.10%;
+  top: 67.46%;
 }
 
-section {
-    background-color: green;
-    border: 1px solid yellow;
-}*/
-@media (max-width: 375px) {
-  .header-nav {
-    display: none;
-  }
-  .portfolio--cities_nav {
-    display: none;
-  }
+.consultation_order--advantage_block .logo {
+  position: absolute;
+  width: 16.32%;
+  height: 100%;
+  background-image: url(/assets/images/consultation_advantage.svg);
+  background-position: 49% 24%;
 }
 
-@media (max-width: 1210) {
-  body {
-    font-size: 12px;
-  }
+.consultation_order--advantage_block .text {
+  position: absolute;
+  width: 78.01%;
+  height: 65.27%;
+  right: 0%;
+  font-family: FuturaDemiC;
+  font-size: 20px;
+  line-height: 25px;
+  color: #E3B873;
+}
+
+.design_types {
+  position: relative;
+  height: 8.58%;
+}
+
+.design_types--headline {
+  position: absolute;
+  width: 28.58%;
+  height: 7.63%;
+  left: 6.88%;
+  top: 15.85%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.design_types--list {
+  position: absolute;
+  width: 20.79%;
+  height: 59.72%;
+  top: 28.93%;
+  left: 6.88%;
+}
+
+.design_types--list .list_of_design_styles {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.design_types--images_container {
+  position: absolute;
+  right: 0%;
+  width: 59.31%;
+  height: 100%;
+  background: darkgreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.design-project {
+  position: relative;
+  width: 100%;
+  height: 6.13%;
+  background: pink;
+}
+
+.design-project--logo {
+  position: absolute;
+  width: 17.87%;
+  height: 10.82%;
+  left: 41.09%;
+  top: 24.8%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+  background-image: url(/assets/images/design_project_logo.svg);
+  background-position: 51% 81%;
+  background-repeat: no-repeat;
+}
+
+.design-project--description {
+  position: absolute;
+  width: 53.05%;
+  height: 9.22%;
+  left: 23.5%;
+  top: 39.4%;
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
 }
 /*# sourceMappingURL=style.css.map */
