@@ -13,22 +13,31 @@ $mainHeight:10067;
 }
 
 header {
-    position: relative;
+
     width: 100%;
     height: 0.81%;
     background: #131313;
 
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        vertical-align: middle;
+        flex-wrap: wrap;
+
+        width: 87.3%;
+        height: 100%;
+        padding-top: 2.8%;
+        margin: 0 auto;
+
+        & .header-RequestCall {
+            margin-top: -1%;
+        }
+    }
 
     & .name {
         color: yellow;
-        position: absolute;
-        left: 5.7%;
-        right: 81.8%;
-        top: 44.57%;
-
         height: 12.2%;
         font-family: FuturaDemiC;
-
         font-size: 0.875em;
         line-height: 16px;
         text-transform: uppercase;
@@ -36,23 +45,18 @@ header {
     }
 
     & .header-nav {
-        position: absolute;
-        height: 12.2%;
-        left: 10.84%;
-        right: 34.73%;
-        top: 44.57%;
 
+
+        min-width: 46.3%;
+        height: 12.2%;
         align-items: center;
 
         &--ul {
-            position: absolute;
-            left: 24.84%;
-            right: 34.73%;
-            top: 44.57%;
 
-            width: 40.43%;
-            height: 0.09%;
+            height: 100%;
             display: flex;
+            flex-basis: auto;
+            flex-shrink: 1;
             font-family: FuturaBookC;
             font-size: 0.85em;
             line-height: 16px;
@@ -60,6 +64,10 @@ header {
             color: #FFFFFF;
 
             //justify-content: space-between;
+            & li {
+                //п display:inline-block;
+            }
+
             & li:not(:first-child) {
                 margin-left: 8.08%;
             }
@@ -72,11 +80,10 @@ header {
     }
 
     & .header-phone {
-        position: absolute;
 
-        right: 21.28%;
-        top: 44.57%;
-        width: 8.76%;
+
+
+        min-width: 10.04%;
         height: 19.2%;
         //font-family: FuturaDemiC;
         font-family: FuturaDemiC;
@@ -90,10 +97,9 @@ header {
     }
 
     & .header-RequestCall {
-        position: absolute;
-        right: 6.95%;
-        top: 28.9%;
-        width: 11.2%;
+
+        position: relative;
+        min-width: 12.83%;
         height: 45.1%;
         background: #E3B873;
         box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -101,10 +107,9 @@ header {
 
         & span {
             position: absolute;
-            left: 24.14%;
-            top: 35.13%;
-
-            width: 59.38%;
+            top: 32%;
+            left: 22%;
+            min-width: 59.38%;
             height: 30%;
             font-family: FuturaDemiC;
             font-size: 0.8125em;
@@ -147,7 +152,7 @@ main {
         background-image: url(/assets/images/intro-backgound.png);
         background-size: cover;
 
-        & h2 {
+        g & h2 {
             position: absolute;
             left: 3.87%;
             top: 25.73%;
@@ -706,7 +711,7 @@ main {
         width: 85.95%;
         height: 72%;
         top: 11.9%;
-        left:7%;
+        left: 7%;
     }
 
     &--column {
@@ -786,17 +791,123 @@ main {
 }
 
 .consultation_order {
+    position: relative;
     width: 100%;
-    height: 968px;
+    height: 9.62%;
+    //968px- высота
+    background: pink;
 
     &--steps-of-order {
-        width: 773px;
-        height: 691.26px;
+        position: absolute;
+        width: 48.8%;
+        height: 66.63%;
+        background-image: url(/assets/images/consultation-steps.png);
+        background-position: -170px 0px;
+        background-repeat: no-repeat;
+        //object-fit: cover;
+        //object-position: 170px 0px;
+
     }
 
     &--form-container {
-        width: 506px;
-        height: 640px;
+        width: 35.18%;
+        height: 52.58%;
+        background: #131313;
+        position: absolute;
+        left: 57.93%;
+        right: 6.88%;
+        top: 10.95%;
+        box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+
+        & .form_headline {
+            position: absolute;
+            width: 58.09%;
+            height: 9.23%;
+            left: 20.55%;
+
+            top: 5.50%;
+
+            & p {
+                font-family: FuturaDemiC;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+
+                color: #FFFFFF;
+
+            }
+        }
+
+        & .consultation_form_text {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            left: 9.68%;
+            top: 22.39%;
+            width: 80.63%;
+            height: 47.93%;
+
+            &--text_input {
+                font-family: FuturaMediumC;
+                font-size: 18px;
+                line-height: 25px;
+                background: #131313;
+                border: none;
+                border-bottom: 3px yellow;
+                color: #FFFFFF;
+                width: 100%;
+            }
+        }
+
+        & .consultation_form_checkbox {
+            position: absolute;
+            width: 56.44%;
+            height: 3.53%;
+            left: 9.68%;
+            top: 69.47%;
+            font-family: FuturaBookC;
+            font-size: 16px;
+            line-height: 22px;
+
+            color: #FFFFFF;
+
+            &--checkbox {
+                background-color: #E3B873;
+                width: 3.55%;
+                height: 3.55%;
+                border-radius: 1px;
+
+                &:after {
+                    content: " ";
+                    width: 3.55%;
+                    height: 3.55%;
+                    background-color: #E3B873;
+                    display: inline-block;
+                    visibility: visible;
+                }
+            }
+        }
+
+        & .consultation_form_submit {
+            position: absolute;
+            right: 9.68%;
+            bottom: 5.3%;
+            width: 42.09%;
+            height: 9.62%;
+            background: #E3B873;
+            &--button_text{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+             
+                background: none;
+                border: none;
+              
+            }
+     
+
+       
     }
 }
 
@@ -809,3 +920,20 @@ section {
     background-color: green;
     border: 1px solid yellow;
 }*/
+@media (max-width: 375px) {
+    .header-nav {
+        display: none;
+    }
+
+    .portfolio--cities_nav {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 1210) {
+    body {
+        font-size: 12px;
+    }
+}

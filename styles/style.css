@@ -28,18 +28,33 @@
 }
 
 header {
-  position: relative;
   width: 100%;
   height: 0.81%;
   background: #131313;
 }
 
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: middle;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 87.3%;
+  height: 100%;
+  padding-top: 2.8%;
+  margin: 0 auto;
+}
+
+header .container .header-RequestCall {
+  margin-top: -1%;
+}
+
 header .name {
   color: yellow;
-  position: absolute;
-  left: 5.7%;
-  right: 81.8%;
-  top: 44.57%;
   height: 12.2%;
   font-family: FuturaDemiC;
   font-size: 0.875em;
@@ -49,26 +64,22 @@ header .name {
 }
 
 header .header-nav {
-  position: absolute;
+  min-width: 46.3%;
   height: 12.2%;
-  left: 10.84%;
-  right: 34.73%;
-  top: 44.57%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 header .header-nav--ul {
-  position: absolute;
-  left: 24.84%;
-  right: 34.73%;
-  top: 44.57%;
-  width: 40.43%;
-  height: 0.09%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   font-family: FuturaBookC;
   font-size: 0.85em;
   line-height: 16px;
@@ -86,10 +97,7 @@ header .header-nav--ul a {
 }
 
 header .header-phone {
-  position: absolute;
-  right: 21.28%;
-  top: 44.57%;
-  width: 8.76%;
+  min-width: 10.04%;
   height: 19.2%;
   font-family: FuturaDemiC;
   font-size: 0.875em;
@@ -101,10 +109,8 @@ header .header-phone {
 }
 
 header .header-RequestCall {
-  position: absolute;
-  right: 6.95%;
-  top: 28.9%;
-  width: 11.2%;
+  position: relative;
+  min-width: 12.83%;
   height: 45.1%;
   background: #E3B873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -114,9 +120,9 @@ header .header-RequestCall {
 
 header .header-RequestCall span {
   position: absolute;
-  left: 24.14%;
-  top: 35.13%;
-  width: 59.38%;
+  top: 32%;
+  left: 22%;
+  min-width: 59.38%;
   height: 30%;
   font-family: FuturaDemiC;
   font-size: 0.8125em;
@@ -159,7 +165,7 @@ main {
   background-size: cover;
 }
 
-.intro--content h2 {
+g .intro--content h2 {
   position: absolute;
   left: 3.87%;
   top: 25.73%;
@@ -173,7 +179,7 @@ main {
   z-index: 2;
 }
 
-.intro--content h2 span {
+g .intro--content h2 span {
   color: #E3B873;
 }
 
@@ -766,18 +772,119 @@ main {
 }
 
 .consultation_order {
+  position: relative;
   width: 100%;
-  height: 968px;
+  height: 9.62%;
+  background: pink;
 }
 
 .consultation_order--steps-of-order {
-  width: 773px;
-  height: 691.26px;
+  position: absolute;
+  width: 48.8%;
+  height: 66.63%;
+  background-image: url(/assets/images/consultation-steps.png);
+  background-position: -170px 0px;
+  background-repeat: no-repeat;
 }
 
 .consultation_order--form-container {
-  width: 506px;
-  height: 640px;
+  width: 35.18%;
+  height: 52.58%;
+  background: #131313;
+  position: absolute;
+  left: 57.93%;
+  right: 6.88%;
+  top: 10.95%;
+  -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.consultation_order--form-container .form_headline {
+  position: absolute;
+  width: 58.09%;
+  height: 9.23%;
+  left: 20.55%;
+  top: 5.50%;
+}
+
+.consultation_order--form-container .form_headline p {
+  font-family: FuturaDemiC;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.consultation_order--form-container .consultation_form_text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 9.68%;
+  top: 22.39%;
+  width: 80.63%;
+  height: 47.93%;
+}
+
+.consultation_order--form-container .consultation_form_text--text_input {
+  font-family: FuturaMediumC;
+  font-size: 18px;
+  line-height: 25px;
+  background: #131313;
+  border: none;
+  border-bottom: 3px yellow;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.consultation_order--form-container .consultation_form_checkbox {
+  position: absolute;
+  width: 56.44%;
+  height: 3.53%;
+  left: 9.68%;
+  top: 69.47%;
+  font-family: FuturaBookC;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.consultation_order--form-container .consultation_form_checkbox--checkbox {
+  background-color: #E3B873;
+  width: 3.55%;
+  height: 3.55%;
+  border-radius: 1px;
+}
+
+.consultation_order--form-container .consultation_form_checkbox--checkbox:after {
+  content: " ";
+  width: 3.55%;
+  height: 3.55%;
+  background-color: #E3B873;
+  display: inline-block;
+  visibility: visible;
+}
+
+.consultation_order--form-container .consultation_form_submit {
+  position: absolute;
+  right: 9.68%;
+  bottom: 5.3%;
+  width: 42.09%;
+  height: 9.62%;
+  background: #E3B873;
+}
+
+.consultation_order--form-container .consultation_form_submit--label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 /*div {
@@ -789,4 +896,18 @@ section {
     background-color: green;
     border: 1px solid yellow;
 }*/
+@media (max-width: 375px) {
+  .header-nav {
+    display: none;
+  }
+  .portfolio--cities_nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1210) {
+  body {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
