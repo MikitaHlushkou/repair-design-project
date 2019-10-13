@@ -744,6 +744,7 @@ main {
             color: #363636;
         }
 
+        ///   !!! стили тут
         & ul {
             position: absolute;
             left: 11.61%;
@@ -994,41 +995,268 @@ main {
     }
 
 }
- .design-project{
+
+.design_project {
     position: relative;
     width: 100%;
-    height: 6.13%;
-    background:pink;
-    &--logo{
+    height: 10.72%;
+
+
+    &--logo {
         position: absolute;
         width: 17.87%;
-        height: 10.82%;
-        left:41.09%;
-        top:24.8%;
+        height: 6.19%;
+        left: 41.09%;
+        top: 14.16%;
         font-family: Yeseva One;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-text-transform: uppercase;
-color: #181818;
-background-image:url(/assets/images/design_project_logo.svg);
-background-position: 51% 81%;
-background-repeat: no-repeat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #181818;
+        background-image: url(/assets/images/design_project_logo.svg);
+        background-position: 51% 81%;
+        background-repeat: no-repeat;
 
     }
-    &--description{
+
+    &--description {
         position: absolute;
         width: 53.05%;
-        height: 9.22%;
+        height: 5.27%;
         left: 23.5%;
-        top: 39.4%;
+        top: 22.62%;
         font-family: FuturaBookC;
-font-size: 20px;
-line-height: 27px;
-text-align: center;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
 
-color: #363636;
+        color: #363636;
+    }
+
+
+    // Повтор флекс контейнера- изменить в будущем!
+    &--collums_container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        top: 31.48%;
+        left: 7.12%;
+        width: 85.88%;
+        height: 68.70%;
+        display: flex;
+
+        background: grey;
+
+    }
+
+    //лучге поменять класс _column
+    &_column {
+        position: relative;
+        width: 31.71%;
+        height: 56.8%;
+        background: green;
+
+        &:nth-child(1) {
+            & .design_project_column--children {
+                height: 50.11%;
+
+            }
+        }
+
+        &:nth-child(2) {
+            & .design_project_column--children {
+                height: 67.93%;
+
+            }
+        }
+
+        &:nth-child(3) {
+            & .design_project_column--children {
+                height: 98.33%;
+
+            }
+        }
+
+        &--children {
+            position: absolute;
+            width: 84.18%;
+            height: 67.9%;
+            top: 69.8%;
+            left: 7.90%;
+            background: #FFFFFF;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+            & .price_label {
+                position: absolute;
+                width: 69.09%;
+                height: 18.88%;
+                top: 90.09%;
+                background: #E3B873;
+                box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+
+                & span {
+                    position: absolute;
+                    left: 10.81%;
+                    right: 76.32%;
+                    top: 32.63%;
+                    bottom: 67.17%;
+                    width: 85.08%;
+                    height: 37.03%;
+                    font-family: Yeseva One;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+
+                }
+            }
+
+            & h3 {
+                position: absolute;
+                width: 69.09%;
+                height: 7.34%;
+                top: 8.74%;
+                left: 11.61%;
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.125em;
+                line-height: 25px;
+                color: #363636;
+            }
+
+            & .design_project_column_list {
+                position: absolute;
+                left: 11.61%;
+                right: 69.82%;
+                top: 20.62%;
+                bottom: 67.76%;
+                width: 80.9%;
+                height: 62.23%;
+                font-family: FuturaBookC;
+                font-size: 0.9375em;
+                line-height: 25px;
+                list-style: disc;
+
+                color: #959595;
+            }
+        }
+
+    }
+}
+
+.working_steps {
+    position: relative;
+    height: 7.45%;
+    background: brown;
+}
+
+.our_team {
+    position: relative;
+    height: 9.26%;
+    background: purple;
+}
+
+.our_clients {
+    position: relative;
+    height: 6.73%;
+    background: pink;
+
+    &--logo {
+        position: absolute;
+        width: 17.87%;
+        height: 10.32%;
+        left: 38.05%;
+        background-image: url(/assets/images/our_clients_logo.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        font-family: Yeseva One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #181818;
+    }
+
+    &--description {
+        position: absolute;
+        width: 33.1%;
+        height: 8.87%;
+        top: 14.15%;
+        left: 33.51%;
+        font-family: FuturaBookC;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+
+        color: #363636;
+
+    }
+
+    &--review_container {
+        position: absolute;
+        width: 85.95%;
+        height: 70.79%;
+        left: 7.09%;
+        bottom: 0%;
+        display: flex;
+        justify-content: space-between;
+
+        & .column {
+            width: 30.42%;
+            height: 66.66%;
+
+            &--reviewer_logo {
+                width: 11.81%;
+                height: 22.81%;
+            }
+
+            &--reviewer_name {
+
+                position: relative;
+                left: 17%;
+                bottom: 18%;
+
+
+                font-family: Yeseva One;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 23px;
+
+                color: #181818;
+
+            }
+
+            &--review {
+                width: 86.2%;
+                height: 73%;
+                font-family: FuturaBookC;
+                font-size: 15px;
+                line-height: 180%;
+                /* or 27px */
+
+
+                color: #959595;
+            }
+       &--price_label{
+        position: relative;
+        width: 78.1%;
+        height: 17.8%;
+        bottom: 0%;
+        top:24%;
+        background: #E3B873;
+        box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+       }
+        }
     }
 }
