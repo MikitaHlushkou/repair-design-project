@@ -169,7 +169,7 @@ main {
   background-size: cover;
 }
 
-g .intro--content h2 {
+.intro--content h2 {
   position: absolute;
   left: 3.87%;
   top: 25.73%;
@@ -183,7 +183,7 @@ g .intro--content h2 {
   z-index: 2;
 }
 
-g .intro--content h2 span {
+.intro--content h2 span {
   color: #E3B873;
 }
 
@@ -928,6 +928,7 @@ g .intro--content h2 span {
 .design_types {
   position: relative;
   height: 8.69%;
+  background: url(/assets/images/design_types-bg_logo.png) no-repeat;
 }
 
 .design_types--headline {
@@ -968,12 +969,23 @@ g .intro--content h2 span {
           justify-content: space-between;
 }
 
+.design_types--list .list_of_design_styles--name_of_style {
+  font-family: Proxima Nova;
+  font-size: 20px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+
+.design_types--list .list_of_design_styles--name_of_style:hover {
+  color: #E3B873;
+  text-decoration: underline;
+}
+
 .design_types--images_container {
   position: absolute;
   right: 0%;
   width: 59.31%;
   height: 100%;
-  background: darkgreen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -981,6 +993,21 @@ g .intro--content h2 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.design_types--images_container .left_column img:first-child {
+  position: relative;
+  bottom: 4.62%;
+}
+
+.design_types--images_container .right_column img:first-child {
+  position: relative;
+  bottom: 13.06%;
+}
+
+.design_types--images_container .right_column img:last-child {
+  position: relative;
+  bottom: 10%;
 }
 
 .design_project {
@@ -1126,13 +1153,231 @@ g .intro--content h2 span {
 .working_steps {
   position: relative;
   height: 7.55%;
-  background: brown;
+  background: #131313;
+}
+
+.working_steps--headline {
+  width: 17.59%;
+  height: 8.8;
+  position: absolute;
+  left: 6.19%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.working_steps--container_of_steps {
+  position: relative;
+  left: 39.77%;
+  width: 53.19%;
+  height: 23.73%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.working_steps--container_of_steps .step--number {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.working_steps--container_of_steps .step--number-bottom {
+  margin-top: 68%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.working_steps--container_of_steps .step--description {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.working_steps--container_of_steps .step:nth-child(1) {
+  width: 20.34%;
+}
+
+.working_steps--container_of_steps .step:nth-child(2) {
+  width: 21.66%;
+}
+
+.working_steps--container_of_steps .step:nth-child(3) {
+  width: 16.3%;
+}
+
+.working_steps--full_descr_of_step {
+  position: relative;
+  width: 28.63%;
+  height: 42.63%;
+  left: 6.88%;
+}
+
+.working_steps--number_of_full_descr_step {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.working_steps--headline_of_full_descr_step {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.working_steps--description_full {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.working_steps--logo {
+  position: absolute;
+  right: 8.17%;
+  bottom: 14.57%;
 }
 
 .our_team {
   position: relative;
   height: 9.39%;
   background: purple;
+}
+
+.our_team--logo {
+  position: relative;
+  width: 33.10%;
+  height: 15.85%;
+  left: 33.51%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-image: url("/assets/images/our_team-logo.svg");
+  background-repeat: no-repeat;
+  background-position: 51% 33%;
+}
+
+.our_team--collums_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 73.93%;
+  height: 53.98%;
+  left: 11.89%;
+}
+
+.our_team--collumn_children {
+  position: relative;
+  bottom: 20%;
+  width: 85.5%;
+  height: 33.1%;
+  margin-left: 8%;
+  background: #FFFFFF;
+  text-align: center;
+}
+
+.our_team--position_logo {
+  position: relative;
+  width: 26%;
+  height: 17%;
+  right: 12%;
+  top: 12%;
+}
+
+.our_team--position_logo-first {
+  height: 100%;
+  background-image: url(/assets/images/our_team-first_worker-position_logo.png);
+  background-position: center;
+}
+
+.our_team--position_logo-second {
+  height: 100%;
+  background-image: url(/assets/images/our_team-second_worker-position_logo.svg);
+  background-position: center;
+}
+
+.our_team--position_logo-third {
+  height: 100%;
+  background-image: url(/assets/images/our_team-third_worker-position_logo.svg);
+  background-position: center;
+}
+
+.our_team .our_team_column {
+  width: 25.64%;
+  height: 82.14%;
+}
+
+.our_team .our_team_column .name {
+  height: 0.4%;
+  padding-top: 10.05%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  background: #FFFFFF;
+  color: #181818;
+}
+
+.our_team .our_team_column .position {
+  margin-top: 12%;
+  font-family: FuturaBookC;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #959595;
+}
+
+.our_team .our_team_column .work_experience {
+  width: 100%;
+  height: 24.2%;
+  padding-top: 5%;
+  margin-top: 8%;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #E3B873;
 }
 
 .our_clients {
