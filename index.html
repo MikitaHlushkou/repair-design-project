@@ -479,17 +479,28 @@
         <div class="contact_info--question_form_container">
             <h2 class="form-headline">have any questions?</h2>
             <form action="" class="question_form">
-                <input type="text" name="name" id="" value="What is your name:">
-                <label for="name"></label>
-                <input type="text" name="phone" id="" value="Your phone number">
-                <label for="phone"></label>
-
+              <div class="question_form--text_input-first_line" >
+                <label class="question_form--label_for_first" for="name">Name</label>
+                <input class="question_form--text_input-first_linez"  type="text" name="name" id="" value="What is your name:">
+                
+              </div> 
+            <div class="question_form--text_input-first_line">
+                <label class="question_form--label_for_first" for="phone">Phone</label>
+                <input class="question_form--text_input-first_linez"  type="text" name="phone" id="" value="Your phone number">
+            
+            </div> 
+               <div class="question_form--text_input-second_line">
+ <label for="question">Question</label>
+ <input class="question_form--text_input-second_line-input"  type="text" name="question" id="" value="I want to know">
+               </div> 
+               
+                <input class="question_form--checkbox_input" type="checkbox" name="agree_checkbox" id="">
+                <label for="agree_checkbox"></label>
+               <input class="question_form--submit_button" type="submit" value="Submit">
+                <label for="submit_button"></label>
             </form>
 
-            <form action="" class="question_form">
-                <input type="text" name="question" id="" value="I want to know">
-                <label for="question"></label>
-            </form>
+           
 
         </div>
 
