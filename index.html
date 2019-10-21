@@ -16,8 +16,8 @@
         <header>
             <div class="container">
                 <div class="name">IC "Repair Design Project"</div>
-                <nav class="header-nav">
-                    <ul class="header-nav--ul">
+                <nav class="main_nav">
+                    <ul class="main_nav--ul">
                         <li><a href="#"> home</a></li>
                         <li><a href="#"> projects</a></li>
                         <li><a href="#"> measurment</a></li>
@@ -26,35 +26,36 @@
                         <li><a href="#"> contacts</a></li>
                     </ul>
                 </nav>
-               
-                <div class="header-phone">+7 (928) 768-32-39</div>
-                <div class="header-RequestCall">
-                    <span>Request a call</span>
 
+                <div class="header_phone">
+                    <a class="header_phone--link" href="tel:+7 (928) 768-32-39"> +7 (928) 768-32-39</a></div>
+                <div class="header_Request_Call">
+                  <!---  <span>Request a call</span> -->
+<button class="header_Request_Call--button">Request a call</button>
                 </div>
             </div>
         </header>
 
         <main>
             <section class="intro">
-                <aside>
-                    <span class="intro--instagram">instagram</span>
+                <aside class="aside">
+                    <a class="intro--instagram" href="#">instagram</a>
 
                 </aside>
                 <div class="intro--content">
-                    <h2>Turnkey Repair in the <br> city of <span>Rostov-on-Don</span> </h2>
-                    <p>Get ready-made turnkey repairs on time<br> with work time saving up to 45 days and 20% from
+                    <h1 class="intro_headline">Turnkey Repair in the <br> city of <span>Rostov-on-Don</span> </h1>
+                    <p class="intro_snippet">Get ready-made turnkey repairs on time<br> with work time saving up to 45 days and 20% from
                         <br>cost of materials due to the organization of work</p>
-                   <form action="" class="intro--form">
+                    <form action="" class="intro--form">
                         <button class="intro--button intro--button-painted_over">
-                            <span>calculate the cost</span> 
+                            <span>calculate the cost</span>
                         </button>
 
-                        <button class="intro--button intro--button-unpainted"> 
-                            <span>submit your application</span> 
+                        <button class="intro--button intro--button-unpainted">
+                            <span>submit your application</span>
                         </button>
-                   </form>
-                     
+                    </form>
+
                 </div>
                 <div class="intro--scroll-down"><span>scroll down</span>
                     <img src="assets/images/scroll-down-logo.svg" alt="logo" class="scroll-logo">
@@ -75,37 +76,47 @@
                     <p class="completed_projects--description">Only a small part of the work performed by our company
                         is<br> presented on the site. For 14 years on in the construction<br> market we have made happy
                         more than 1000 families</p>
-              <!---    
+                    <!---    
                     </div> -->
-<div class="completed_projects--flex_container" id="flex_container">
-  
-    <div class="flex_container_left_collum">
-                        <h3 class="flex_container_left_collum--headline">city</h3>
-                        <span class="flex_container_left_collum--text">Rostov-on-Don<br> LCD admiral </span>
-                        <h3 class="flex_container_left_collum--headline">Repair time:</h3>
-                        <span class="flex_container_left_collum--text">3.5 months</span>
-                    </div>
+                    <div class="completed_projects--flex_container" id="flex_container">
 
-                    <div class="flex_container_right_collum">
-                                      <h3 class="flex_container_right_collum--headline">apartment area:</h3>
-                        <span class="flex_container_right_collum--text"> 81 m2</span>
-              
-                              
-                        <h3 class="flex_container_right_collum--headline">Repair Cost:</h3>
-                        <span class="flex_container_right_collum--text">Upon request</span>
-</div>
-</div>
+                        <div class="flex_container_left_collum">
+                            <h3 class="flex_container_left_collum--headline">city</h3>
+                            <span class="flex_container_left_collum--text">Rostov-on-Don<br> LCD admiral </span>
+                            <h3 class="flex_container_left_collum--headline">Repair time:</h3>
+                            <span class="flex_container_left_collum--text">3.5 months</span>
+                        </div>
+
+                        <div class="flex_container_right_collum">
+                            <h3 class="flex_container_right_collum--headline">apartment area:</h3>
+                            <span class="flex_container_right_collum--text"> 81 m2</span>
+
+
+                            <h3 class="flex_container_right_collum--headline">Repair Cost:</h3>
+                            <span class="flex_container_right_collum--text">Upon request</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="portfolio--slider">
                     <div class="portfolio--slider-center" id="slider_portfolio">
                         <img src="assets/images/portfolio-slider-center.png " alt="portfolio image in slider"
                             width="100%" height="100%">
+                        <img class="slider_right_button"
+                            src="assets/images/mobile-completed_projects-right_slider_button.svg"
+                            alt="slider right button">
+                            <img class="slider_left_button"
+                            src="assets/images/mobile-completed_projects-right_slider_button.svg"
+                            alt="slider left button">
+
                     </div>
                     <div class="portfolio--slider-right">
                         <img src="assets/images/portfolio-slider-right.png" alt="portfolio image in slider right"
                             width="100%" height="100%">
-                        <img class="slider_right_button" src="assets/images/slider-right-button.svg"
+                      
+                            <img class="slider_right_button" src="assets/images/slider-right-button.svg"
                             alt="slider right button">
+                            
+                       
                         <!---- width="37.31%" height="11.18%" -->
                     </div>
                 </div>
@@ -126,32 +137,43 @@
                     <span>online control</span>
                 </div>
                 <div class="portfolio--video">
-                    <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/wfb2f2ebYGI" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/wfb2f2ebYGI"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
             </section>
             <section class="online-control">
                 <div class="online-control--description">
-                    <p class="online-control--description-desktop"> At each facility, a camera is installed that broadcasts the progress of work on the clock.<br>
+                    <p class="online-control--description-desktop"> At each facility, a camera is installed that
+                        broadcasts the progress of work on the clock.<br>
                         At any time, you can go to our website and monitor the progress of work in your<br> apartment.
                         You can watch the live broadcast from one of our facilities!<br> Leave a request below and you
                         will receive a link to the broadcast.</p>
-                        <p class="online-control--description-mobile"> At each facility, a camera is installed that broadcasts the<br> progress of work on the clock.
-                            At any time, you can go to our<br> website and monitor the progress of work in your apartment.
-                            Y<br>ou can watch the live broadcast from one of our facilities!<br> Leave a request below and you
-                            will receive a link to the broadcast.</p>
+                    <p class="online-control--description-mobile"> At each facility, a camera is installed that
+                        broadcasts the<br> progress of work on the clock.
+                        At any time, you can go to our<br> website and monitor the progress of work in your apartment.
+                        Y<br>ou can watch the live broadcast from one of our facilities!<br> Leave a request below and
+                        you
+                        will receive a link to the broadcast.</p>
                 </div>
                 <div class="online-control--form">
-                    <form class="form_online_control" action="">
-                        <label class="form_online_control--text_label" for="username">Name</label>
-                        <input class="form_online_control--text_input" type="text" name="username" id="" value="What is your name:">
-                        <label class="form_online_control--text_label" for="phone">Phone</label>
-                        <input class="form_online_control--text_input" type="text" name="phone" id="" value="Your phone number:">
+                    <form  name="Form_online_control" class="form_online_control" action="" onsubmit="return validateForm()">
+
+                        <input class="form_online_control--text_input" type="text" name="username" id=""
+                            value="What is your name:">
+                            <label class="form_online_control--text_label" for="username">Name</label>
+
+                        <input class="form_online_control--text_input" type="text" name="phone" id=""
+                            value="Your phone number:">
+                            <label class="form_online_control--text_label" for="phone">Phone</label>
                         <input class="form_online_control--submit_btn" type="submit" value="submit">
-                        <input type="checkbox" name="checkbox" id="">
+                        <label class="checkbox_container">I agree to the processing of personal data
+                            <input class="question_form--checkbox_input" type="checkbox" required name="agree_checkbox" id="">
+                            <span class="checkmark"></span>
+                          
+                        </label>   <!---  <input type="checkbox" name="checkbox" id="">
                         <label class="form_online_control--checkbox_label" for="checkbox"> I agree to the processing of
-                            personal data</label>
+                            personal data</label> -->
                     </form>
                 </div>
             </section>
@@ -217,24 +239,29 @@
             </section>
             <section class="consultation_order">
                 <div class="consultation_order--steps-of-order">
-
+<img src="assets/images/consultation-steps.png" alt="">
                 </div>
                 <div class="consultation_order--form-container">
                     <div class="form_headline">
                         <p>Leave a request for free<br> departure of the measurer</p>
                     </div>
-                    <form action="" class="consultation_form_text">
-                        <input type="text" name="username" id="" class="consultation_form_text--text_input"
+                    <form onsubmit="return validateForm_consultation() " action="" name="Form_consultation" class="consultation_form_text">
+                        <input type="text" name="username-c" id="" class="consultation_form_text--text_input"
                             value="What is your name:">
-                        <label for="" class="consultation_form_text--label_for_text_input"></label>
-                        <input type="text" name="user_phone" id="" class="consultation_form_text--text_input"
+                        <label for="" class="consultation_form_text--label_for_text_input">Name</label>
+                        <input type="text" name="phone-c" id="" class="consultation_form_text--text_input"
                             value="Your phone number">
-                        <label for="" class="consultation_form_text--label_for_text_input"></label>
-                        <input type="text" name="user_mail" id="" class="consultation_form_text--text_input"
+                        <label for="" class="consultation_form_text--label_for_text_input">Phone</label>
+                        <input type="text" name="mail-c" id="" class="consultation_form_text--text_input"
                             value="Your email">
-                        <label for="" class="consultation_form_text--label_for_text_input"></label>
+                        <label for="" class="consultation_form_text--label_for_text_input">Email</label>
+                        <label class="checkbox_container">I agree to the processing of personal data
+                            <input class="question_form--checkbox_input" type="checkbox" required name="agree_checkbox" id="">
+                            <span class="checkmark"></span>
+                          
+                        </label> 
                     </form>
-                    <form action="" class="consultation_form_checkbox">
+                   <!--- <form action="" class="consultation_form_checkbox">
                         <div class="consultation_form_checkbox--checkbox">
                             <input type="checkbox" name="checkbox" id="">
                         </div>
@@ -242,7 +269,7 @@
                         <label for="checkbox">
                             I agree to the processing of personal data
                         </label>
-                    </form>
+                    </form> -->
                     <form action="" class="consultation_form_submit">
 
                         <input class="consultation_form_submit--button_text" type="submit" value="Call the measurer">
@@ -276,7 +303,8 @@
                 </div>
                 <div class="design_types--images_container">
                     <div class="mobile_slider">
-                        <img src="assets/images/mobile_design_types-slider.png" alt="" class="mobile_slider--first_image">
+                        <img src="assets/images/mobile_design_types-slider.png" alt=""
+                            class="mobile_slider--first_image">
                     </div>
                     <div class="left_column">
                         <img src="assets/images/design_style-left-column-top.png" alt="">
@@ -400,11 +428,12 @@
             <section class="our_team">
 
                 <div class="our_team--logo">our team
-                     <p class="our_team--team_description">
-                    Our team has helped to become happier for more than<br> 500 families and we are not going to stop
-                </p>
+                    <p class="our_team--team_description">
+                        Our team has helped to become happier for more than<br> 500 families and we are not going to
+                        stop
+                    </p>
                 </div>
-               
+
                 <div class="our_team--collums_container">
                     <div class="our_team_column">
                         <div class="our_team--position_logo">
@@ -513,24 +542,28 @@
                     <form action="" class="question_form">
                         <div class="question_form--text_input-first_line">
                             <label class="question_form--label question_form--label_for_first" for="name">Name</label>
-                            <input class="question_form--text_input  question_form--text_input-first_linez" type="text" name="name" id=""
-                                value="What is your name:">
+                            <input class="question_form--text_input  question_form--text_input-first_linez" type="text"
+                                name="name" id="" value="What is your name:">
 
                         </div>
                         <div class="question_form--text_input-first_line">
                             <label class="question_form--label question_form--label_for_first" for="phone">Phone</label>
-                            <input class="question_form--text_input question_form--text_input-first_linez" type="text" name="phone" id=""
-                                value="Your phone number">
+                            <input class="question_form--text_input question_form--text_input-first_linez" type="text"
+                                name="phone" id="" value="Your phone number">
 
                         </div>
                         <div class="question_form--text_input-second_line">
                             <label class="question_form--label" for="question">Question</label>
-                            <input class="question_form--text_input  question_form--text_input-second_line-input" type="text" name="question" id=""
-                                value="I want to know">
+                            <input class="question_form--text_input  question_form--text_input-second_line-input"
+                                type="text" name="question" id="" value="I want to know">
                         </div>
-
-                        <input class="question_form--checkbox_input" type="checkbox" name="agree_checkbox" id="">
-                        <label for="agree_checkbox"></label>
+<label class="checkbox_container">I agree to the processing of personal data
+    <input class="question_form--checkbox_input" type="checkbox" required name="agree_checkbox" id="">
+    <span class="checkmark"></span>
+  
+</label>
+                      <!--  <input class="question_form--checkbox_input" type="checkbox" name="agree_checkbox" id="">
+                        <label for="agree_checkbox"> I agree to the processing of personal data</label> -->
                         <input class=" question_form--submit_button" type="submit" value="Submit">
                         <label for="submit_button"></label>
                     </form>
@@ -538,42 +571,50 @@
 
 
                 </div>
-<div class="contact_info_flex_cont">
-                <div class="contact_info--adress">
-                    <p>Rostov-on-Don, Nansen St., 239 Shopping Center<br> Decorum Tel +7 (928) 768 32 29</p>
-                    <div class="contact_info_logo_container">
-                        <img class="contact_info_logo_container--mail_logo" src="assets/images/mail.logo.svg" alt="">
-                        <img class="contact_info_logo_container--inst_logo" src="assets/images/instagram-logo.svg" alt="">
+                <div class="contact_info_flex_cont">
+                    <div class="contact_info--adress">
+                        <p>Rostov-on-Don, Nansen St., 239 Shopping Center<br> Decorum Tel +7 (928) 768 32 29</p>
+                        <div class="contact_info_logo_container">
+                         <button class="contact_info_flex_cont--button"> 
+                                <img  src="assets/images/mail.logo.svg"
+                                alt="">
+                         </button >  
+                     <button class="contact_info_flex_cont--button">  <img class="" src="assets/images/instagram-logo.svg"
+                        alt=""></button>     
+
+                        </div>
 
                     </div>
-                   
+                    <div class="contact_info--map">
+                        <img src="assets/images/map.png" alt="" class="map">
+                    </div>
                 </div>
-                <div class="contact_info--map">
-                    <img src="assets/images/map.png" alt="" class="map">
-                </div>
-            </div>
             </section>
         </main>
         <footer>
-            <div class="container">
-                <div class="name">IC "Repair Design Project"</div>
-                <nav class="header-nav">
-                    <ul class="header-nav--ul">
-                        <li><a href="#"> home</a></li>
-                        <li><a href="#"> projects</a></li>
-                        <li><a href="#"> measurment</a></li>
-                        <li><a href="#"> team</a></li>
-                        <li><a href="#"> reviews</a></li>
-                        <li><a href="#"> contacts</a></li>
-                    </ul>
-                </nav>
-                <div class="header-phone">+7 (928) 768-32-39</div>
-                <div class="header-RequestCall">
-                    <span>Request a call</span>
-                </div>
-            </div>
+                <div class="container">
+                        <div class="name">IC "Repair Design Project"</div>
+                        <nav class="main_nav">
+                            <ul class="main_nav--ul">
+                                <li><a href="#"> home</a></li>
+                                <li><a href="#"> projects</a></li>
+                                <li><a href="#"> measurment</a></li>
+                                <li><a href="#"> team</a></li>
+                                <li><a href="#"> reviews</a></li>
+                                <li><a href="#"> contacts</a></li>
+                            </ul>
+                        </nav>
+        
+                        <div class="footer_phone">
+                            <a class="footer_phone--link" href="tel:+7 (928) 768-32-39"> +7 (928) 768-32-39</a></div>
+                        <div class="footer_Request_Call">
+                          <!---  <span>Request a call</span> -->
+        <button class="footer_Request_Call--button">Request a call</button>
+                        </div>
+                    </div>
         </footer>
     </div>
+<script src="form_check.js"></script>
 </body>
 
 </html>

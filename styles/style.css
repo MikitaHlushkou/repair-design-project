@@ -83,7 +83,7 @@ header .name {
   }
 }
 
-header .header-nav {
+header .main_nav {
   min-width: 46.3%;
   height: 12.2%;
   -webkit-box-align: center;
@@ -91,7 +91,7 @@ header .header-nav {
           align-items: center;
 }
 
-header .header-nav--ul {
+header .main_nav--ul {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,29 +108,36 @@ header .header-nav--ul {
 }
 
 @media screen and (max-width: 375px) {
-  header .header-nav--ul {
+  header .main_nav--ul {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1438px) {
-  header .header-nav--ul {
+  header .main_nav--ul {
     font-size: 14px;
   }
 }
 
-header .header-nav--ul li:not(:first-child) {
+header .main_nav--ul li:not(:first-child) {
   margin-left: 8.08%;
 }
 
-header .header-nav--ul a {
+header .main_nav--ul a {
   text-decoration: none;
   color: #FFFFFF;
 }
 
-header .header-phone {
+header .main_nav--ul a:hover {
+  color: #E3B873;
+}
+
+header .header_phone {
   min-width: 10.04%;
   height: 19.2%;
+}
+
+header .header_phone--link {
   font-family: FuturaDemiC;
   font-size: calc(12px + (14 - 12) * (100vw - 375px) / (1438 - 375));
   line-height: 16px;
@@ -141,49 +148,50 @@ header .header-phone {
 }
 
 @media screen and (max-width: 375px) {
-  header .header-phone {
+  header .header_phone--link {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1438px) {
-  header .header-phone {
+  header .header_phone--link {
     font-size: 14px;
   }
 }
 
-header .header-RequestCall {
+header .header_Request_Call {
   position: relative;
   min-width: 12.83%;
   height: 45.1%;
+  bottom: 15%;
   background: #E3B873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 5.4%;
 }
 
-header .header-RequestCall span {
-  position: absolute;
-  top: 32%;
-  left: 22%;
-  min-width: 59.38%;
-  height: 30%;
+header .header_Request_Call button {
+  position: relative;
+  width: 100%;
+  height: 100%;
   font-family: FuturaDemiC;
   font-size: calc(13px + (14 - 13) * (100vw - 375px) / (1438 - 375));
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  border: none;
+  background: none;
 }
 
 @media screen and (max-width: 375px) {
-  header .header-RequestCall span {
+  header .header_Request_Call button {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 1438px) {
-  header .header-RequestCall span {
+  header .header_Request_Call button {
     font-size: 14px;
   }
 }
@@ -235,7 +243,8 @@ main {
   background-size: cover;
 }
 
-.intro--content h2 {
+.intro--content .intro_headline {
+  position: relative;
   margin-top: 16.73%;
   font-family: Yeseva One;
   font-style: normal;
@@ -247,50 +256,51 @@ main {
 }
 
 @media screen and (max-width: 375px) {
-  .intro--content h2 {
+  .intro--content .intro_headline {
     font-size: 23px;
   }
 }
 
 @media screen and (min-width: 1438px) {
-  .intro--content h2 {
+  .intro--content .intro_headline {
     font-size: 40px;
   }
 }
 
-.intro--content h2 span {
+.intro--content .intro_headline span {
   color: #E3B873;
 }
 
-.intro--content p {
+.intro--content .intro_snippet {
+  position: relative;
   padding-top: 2.68%;
   font-family: FuturaBookC;
   font-size: calc(18px + (22 - 18) * (100vw - 375px) / (1438 - 375));
   line-height: 30px;
   color: #FFFFFF;
-  z-index: 2;
+  z-index: 4;
 }
 
 @media screen and (max-width: 375px) {
-  .intro--content p {
+  .intro--content .intro_snippet {
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1438px) {
-  .intro--content p {
+  .intro--content .intro_snippet {
     font-size: 22px;
   }
 }
 
-.intro aside {
+.intro .aside {
   width: 5.6%;
   height: 100%;
   background: #131313;
   z-index: 2;
 }
 
-.intro aside .intro--instagram {
+.intro .aside .intro--instagram {
   display: block;
   position: relative;
   top: 50.05%;
@@ -298,7 +308,9 @@ main {
   font-size: calc(12px + (14 - 12) * (100vw - 375px) / (1438 - 375));
   line-height: 16px;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   color: #E3B873;
@@ -306,15 +318,24 @@ main {
 }
 
 @media screen and (max-width: 375px) {
-  .intro aside .intro--instagram {
+  .intro .aside .intro--instagram {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1438px) {
-  .intro aside .intro--instagram {
+  .intro .aside .intro--instagram {
     font-size: 14px;
   }
+}
+
+.intro .aside .intro--instagram::after {
+  content: "";
+  position: absolute;
+  width: 51px;
+  border: 1.5px solid #E3B873;
+  left: 89px;
+  top: 5px;
 }
 
 .intro button span {
@@ -388,10 +409,25 @@ main {
   }
 }
 
+.intro--scroll-down span:hover {
+  color: #E3B873;
+}
+
 .intro--scroll-down img {
   position: absolute;
   right: 22.23%;
   top: 34.64%;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
 }
 
 .portfolio {
@@ -839,7 +875,7 @@ main {
 .online-control--form .form_online_control--text_label {
   position: relative;
   height: 26.6%;
-  left: 6%;
+  right: 31%;
   bottom: 8%;
   font-family: FuturaBookC;
   font-size: 15px;
@@ -856,10 +892,50 @@ main {
   color: #181818;
 }
 
-.online-control--form .form_online_control [type=checkbox] {
+.online-control--form .form_online_control .checkbox_container {
+  width: 100%;
+  display: inline-block;
+  top: 54%;
+  left: 30%;
+  padding-left: 4%;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: FuturaBookC;
+  font-size: 16px;
+  line-height: 22px;
+  color: #181818;
+}
+
+.online-control--form .form_online_control .checkbox_container input {
+  display: none;
+}
+
+.online-control--form .form_online_control .checkbox_container input:checked + .checkmark:after {
+  content: "";
   position: absolute;
-  bottom: -92%;
-  left: 31%;
+  height: 3px;
+  width: 6px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.online-control--form .form_online_control .checkbox_container .checkmark {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #E3B873;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border-radius: 2px;
 }
 
 .types-of-repair {
@@ -1019,10 +1095,14 @@ main {
   display: inline-block;
   width: 48.8%;
   height: 66.63%;
-  background-image: url(../assets/images/consultation-steps.png);
   background-position: -170px 0px;
   background-repeat: no-repeat;
   opacity: 0.3;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, right top, from(#fff), color-stop(20%, #fff), color-stop(20%, #fff), to(#E3B873)) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #E3B873 100%) border-box;
+  border: 3px solid transparent;
+  z-index: 1;
 }
 
 .consultation_order--form-container {
@@ -1075,40 +1155,65 @@ main {
   line-height: 25px;
   background: #131313;
   border: none;
-  border-bottom: 3px yellow;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   color: #FFFFFF;
   width: 100%;
 }
 
-.consultation_order--form-container .consultation_form_checkbox {
-  width: 56.44%;
-  height: 3.53%;
-  margin-left: 9.68%;
-  top: 69.47%;
+.consultation_order--form-container .consultation_form_text--label_for_text_input {
+  position: relative;
+  bottom: 24%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.consultation_order--form-container .checkbox_container {
+  width: 100%;
+  display: inline-block;
+  top: 0%;
+  left: 0%;
+  padding-left: 6%;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-family: FuturaBookC;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
 }
 
-.consultation_order--form-container .consultation_form_checkbox--checkbox {
-  background-color: #E3B873;
-  width: 3.55%;
-  height: 3.55%;
-  border-radius: 1px;
+.consultation_order--form-container .checkbox_container input {
+  display: none;
 }
 
-.consultation_order--form-container .consultation_form_checkbox--checkbox:after {
-  content: " ";
-  width: 3.55%;
-  height: 3.55%;
-  background-color: #E3B873;
+.consultation_order--form-container .checkbox_container input:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 6px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.consultation_order--form-container .checkbox_container .checkmark {
   display: inline-block;
-  visibility: visible;
+  width: 18px;
+  height: 18px;
+  background: #E3B873;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border-radius: 2px;
 }
 
 .consultation_order--form-container .consultation_form_submit {
-  margin-left: 54.68%;
+  margin-left: 48%;
   margin-top: 4.3%;
   width: 42.09%;
   height: 9.62%;
@@ -1263,7 +1368,7 @@ main {
 
 .design_project--logo {
   width: 17.87%;
-  height: 7.19%;
+  height: 6.19%;
   margin-left: 41.09%;
   padding-top: 10.16%;
   font-family: Yeseva One;
@@ -1275,7 +1380,7 @@ main {
   text-transform: uppercase;
   color: #181818;
   background-image: url(../assets/images/design_project_logo.svg);
-  background-position: 51% 81%;
+  background-position: bottom center;
   background-repeat: no-repeat;
 }
 
@@ -1311,11 +1416,10 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 4%;
-  left: 7.12%;
+  margin-left: 7.12%;
   width: 85.88%;
   height: 80.5%;
   display: flex;
-  background: grey;
 }
 
 .design_project_column {
@@ -1333,7 +1437,7 @@ main {
 }
 
 .design_project_column:nth-child(3) .design_project_column--children {
-  height: 98.33%;
+  height: 89.33%;
 }
 
 .design_project_column--children {
@@ -1918,6 +2022,7 @@ main {
 .contact_info {
   height: 12.79%;
   padding: 1px 0;
+  background: #181818;
 }
 
 .contact_info--question_form_container {
@@ -1938,6 +2043,7 @@ main {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  background: #181818;
 }
 
 .contact_info--question_form_container .question_form {
@@ -1946,6 +2052,8 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 80%;
+  background: #181818;
   /*      &--label_for_first {
                 position: relative;
                 font-family: FuturaBookC;
@@ -1964,12 +2072,18 @@ main {
   line-height: 24px;
   background: none;
   color: #FFFFFF;
+  height: auto;
   border: none;
 }
 
 .contact_info--question_form_container .question_form--text_input-first_line {
   width: 25.7%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-top: 5.29%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 8px;
 }
 
 .contact_info--question_form_container .question_form--text_input-first_line:first-child {
@@ -1980,23 +2094,75 @@ main {
 
 .contact_info--question_form_container .question_form--text_input-second_line {
   width: 58.46%;
-  margin-top: 6.24%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-left: 19.7%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 8px;
 }
 
 .contact_info--question_form_container .question_form--text_input-second_line-input {
   width: 100%;
 }
 
-.contact_info--question_form_container .question_form--checkbox_input {
-  display: block;
-  width: 32.34%;
-  margin-left: 17.52%;
+.contact_info--question_form_container .question_form .checkbox_container {
+  width: 100%;
+  display: inline-block;
+  left: 30%;
+  padding-left: 4%;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: FuturaBookC;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.contact_info--question_form_container .question_form .checkbox_container input {
+  display: none;
+}
+
+.contact_info--question_form_container .question_form .checkbox_container input:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 6px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.contact_info--question_form_container .question_form .checkbox_container .checkmark {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #E3B873;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border-radius: 2px;
 }
 
 .contact_info--question_form_container .question_form--submit_button {
   width: 22.65%;
   height: 11.67%;
+  margin: 0 auto;
+  font-family: FuturaDemiC;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #E3B873;
+  border: none;
 }
 
 .contact_info--question_form_container .question_form--label {
@@ -2004,6 +2170,16 @@ main {
   font-size: 15px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.contact_info--question_form_container .question_form .contact_info_flex_cont--button {
+  border: none;
+  background: none;
+}
+
+.contact_info .contact_info_flex_cont--button {
+  border: none;
+  background: none;
 }
 
 .contact_info--adress {
@@ -2081,7 +2257,7 @@ footer .name {
   color: #E3B873;
 }
 
-footer .header-nav {
+footer .main_nav {
   min-width: 46.3%;
   height: 12.2%;
   -webkit-box-align: center;
@@ -2089,7 +2265,7 @@ footer .header-nav {
           align-items: center;
 }
 
-footer .header-nav--ul {
+footer .main_nav--ul {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2099,26 +2275,45 @@ footer .header-nav--ul {
   -ms-flex-negative: 1;
       flex-shrink: 1;
   font-family: FuturaBookC;
-  font-size: 0.85em;
+  font-size: calc(12px + (14 - 12) * (100vw - 375px) / (1438 - 375));
   line-height: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
-footer .header-nav--ul li:not(:first-child) {
+@media screen and (max-width: 375px) {
+  footer .main_nav--ul {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1438px) {
+  footer .main_nav--ul {
+    font-size: 14px;
+  }
+}
+
+footer .main_nav--ul li:not(:first-child) {
   margin-left: 8.08%;
 }
 
-footer .header-nav--ul a {
+footer .main_nav--ul a {
   text-decoration: none;
   color: #FFFFFF;
 }
 
-footer .header-phone {
+footer .main_nav--ul a:hover {
+  color: #E3B873;
+}
+
+footer .footer_phone {
   min-width: 10.04%;
   height: 19.2%;
+}
+
+footer .footer_phone--link {
   font-family: FuturaDemiC;
-  font-size: 0.875em;
+  font-size: calc(12px + (14 - 12) * (100vw - 375px) / (1438 - 375));
   line-height: 16px;
   text-align: right;
   -webkit-text-decoration-line: underline;
@@ -2126,28 +2321,53 @@ footer .header-phone {
   color: #E3B873;
 }
 
-footer .header-RequestCall {
+@media screen and (max-width: 375px) {
+  footer .footer_phone--link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1438px) {
+  footer .footer_phone--link {
+    font-size: 14px;
+  }
+}
+
+footer .footer_Request_Call {
   position: relative;
   min-width: 12.83%;
   height: 45.1%;
+  bottom: 15%;
   background: #E3B873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border-radius: 5.4%;
 }
 
-footer .header-RequestCall span {
-  position: absolute;
-  top: 32%;
-  left: 22%;
-  min-width: 59.38%;
-  height: 30%;
+footer .footer_Request_Call button {
+  position: relative;
+  width: 100%;
+  height: 100%;
   font-family: FuturaDemiC;
-  font-size: 0.8125em;
+  font-size: calc(13px + (14 - 13) * (100vw - 375px) / (1438 - 375));
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  border: none;
+  background: none;
+}
+
+@media screen and (max-width: 375px) {
+  footer .footer_Request_Call button {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1438px) {
+  footer .footer_Request_Call button {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -2156,10 +2376,10 @@ footer .header-RequestCall span {
     height: 9023px;
     background: #252525;
   }
-  .header-nav {
+  .main_nav {
     display: none;
   }
-  .header-RequestCall {
+  .header_Request_Call {
     display: none;
   }
   aside {
@@ -2213,6 +2433,9 @@ footer .header-RequestCall span {
   footer {
     display: none;
   }
+  .footer_Request_Call {
+    display: none;
+  }
   body {
     font-size: 70%;
   }
@@ -2263,6 +2486,18 @@ footer .header-RequestCall span {
   .portfolio--slider-center {
     width: 100%;
     height: 100%;
+  }
+  .portfolio--slider .slider_right_button {
+    position: absolute;
+    right: 3.82%;
+    top: 42.37%;
+  }
+  .portfolio--slider .slider_left_button {
+    position: absolute;
+    left: 3.82%;
+    top: 42.37%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   .portfolio .completed_projects {
     width: 100%;
@@ -2324,6 +2559,9 @@ footer .header-RequestCall span {
   .online-control--form .form_online_control--submit_btn {
     width: 100%;
     height: 16%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .online-control--form .form_online_control--text_input {
     height: 6.7%;
@@ -2332,17 +2570,23 @@ footer .header-RequestCall span {
     font-size: 18px;
     line-height: 138.72%;
     /* or 25px */
+    border-bottom: 1px solid gray;
     color: #FFFFFF;
   }
   .online-control--form .form_online_control--text_label {
     height: 3.8%;
     left: 0;
-    bottom: 0;
-    top: 9%;
+    bottom: 24%;
     font-family: FuturaBookC;
     font-size: 15px;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.5);
+  }
+  .online-control--form .form_online_control .checkbox_container {
+    top: 0;
+    left: 0;
+    color: #FFFFFF;
+    padding-left: 11%;
   }
   .types-of-repair {
     background: #FFFFFF;
@@ -2367,6 +2611,10 @@ footer .header-RequestCall span {
     height: 65.9%;
     bottom: 38%;
     left: 0;
+  }
+  .types-of-repair--children .price_label {
+    width: 71%;
+    line-height: 21px;
   }
   .types-of-repair--logo {
     width: 75.58%;
@@ -2441,6 +2689,8 @@ footer .header-RequestCall span {
   }
   .our_team {
     height: 19.21%;
+    font-size: 22px;
+    line-height: 138.6%;
   }
   .our_team--logo {
     height: 7.38%;
@@ -2491,6 +2741,7 @@ footer .header-RequestCall span {
   }
   .contact_info--question_form_container .question_form--text_input-first_line {
     width: 100%;
+    margin-top: 12%;
   }
   .contact_info--question_form_container .question_form--text_input-first_line input[type="text"] {
     margin-left: 0;
@@ -2502,12 +2753,29 @@ footer .header-RequestCall span {
   .contact_info--question_form_container .question_form--text_input-second_line {
     width: 100%;
     margin-left: 0;
+    margin-top: 12%;
   }
   .contact_info--question_form_container .question_form--submit_button {
     width: 100%;
-    margin-top: 13%;
-    padding-top: 5%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 15%;
+    margin-left: 0;
+    padding-top: 4%;
     padding-bottom: 5%;
+    font-family: FuturaDemiC;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E3B873;
+  }
+  .contact_info--question_form_container .question_form .checkbox_container {
+    top: 5%;
+    left: 0;
+    padding-left: 7%;
   }
   .contact_info_flex_cont {
     -webkit-box-orient: vertical;
